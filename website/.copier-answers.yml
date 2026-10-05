@@ -1,0 +1,16 @@
+# Changes here will be overwritten by Copier.
+_commit: 8773fe5
+_src_path: /Users/gregstar/Code/starters/astro
+default_locale: de-AT
+description: Renovierung und Sanierung für Unternehmen in Wien.
+include_reports: false
+package_name: muh-homepage
+primary_audience: 'Gewerbliche Kunden in Wien: Geschäftslokale, Büros und Hotels'
+primary_cta: Projekt per E-Mail oder Telefon besprechen
+project_goal: Präsentierbare Homepage mit gekennzeichneten Beispielinhalten, ohne
+    Deployment.
+project_name: MUH – Malerei und Handwerk
+project_type: Business website
+site_url: ''
+use_locales: false
+website_tier: starter

@@ -1,0 +1,111 @@
+[
+  {
+    "slug": "hero-office",
+    "source": "Buerorenovierung4.jpg",
+    "width": 2560,
+    "height": 1920,
+    "permission": "Greg confirmed project photos, 2026-09-16",
+    "role": "Previous hero asset; retained, no longer used in Hero"
+  },
+  {
+    "slug": "business-retail",
+    "source": "renovierung.jpg",
+    "width": 800,
+    "height": 533,
+    "permission": "Greg confirmed project photos, 2026-09-16",
+    "role": "Authentic project photo"
+  },
+  {
+    "slug": "business-office",
+    "source": "Buerorenovierung12.jpg",
+    "width": 800,
+    "height": 600,
+    "permission": "Greg confirmed project photos, 2026-09-16",
+    "role": "Authentic project photo"
+  },
+  {
+    "slug": "business-hotel",
+    "source": "Hotelzimmerrenovierung14.jpg",
+    "width": 800,
+    "height": 600,
+    "permission": "Greg confirmed project photos, 2026-09-16",
+    "role": "Authentic project photo"
+  },
+  {
+    "slug": "project-office",
+    "source": "Buerorenovierung6.jpg",
+    "width": 800,
+    "height": 600,
+    "permission": "Greg confirmed project photos, 2026-09-16",
+    "role": "Authentic photograph; example description explicitly labeled"
+  },
+  {
+    "slug": "project-retail",
+    "source": "Gewerbliche-Renovierung.jpg",
+    "width": 800,
+    "height": 533,
+    "permission": "Greg confirmed project photos, 2026-09-16",
+    "role": "Authentic photograph; example description explicitly labeled"
+  },
+  {
+    "slug": "project-hotel",
+    "source": "Hotelzimmerrenovierung6.jpg",
+    "width": 800,
+    "height": 600,
+    "permission": "Greg confirmed project photos, 2026-09-16",
+    "role": "Authentic photograph; example description explicitly labeled"
+  },
+  {
+    "slug": "hero-altbau-ai",
+    "source": "../quellen/muh-ki-studie/altbau-ki-studie-v1.png",
+    "original": "Hausrenovierung15.jpg",
+    "width": 1086,
+    "height": 1448,
+    "permission": "Greg approved AI edit and integration in conversation",
+    "role": "AI-edited hero illustration based on project photograph; visibly labeled Projektfoto · KI-bearbeitet; not authentic before/after evidence",
+    "derivatives": [
+      480,
+      800,
+      1086
+    ]
+  },
+  {
+    "slug": "compare",
+    "source": "../quellen/muh-vorher-nachher/",
+    "role": "Demo switch: AI edited before/after vs classically aligned project originals; each mode disclosed",
+    "permission": "Greg explicitly requested integration and toggle"
+  },
+  {
+    "slug": "project-retail-evening",
+    "source": "renovierung23.jpg",
+    "role": "Authentic selected evening photo"
+  },
+  {
+    "slug": "business-hotel-selected / project-hotel-selected",
+    "source": "Hotelzimmerrenovierung21.jpg",
+    "role": "Authentic selected hotel photo"
+  },
+  {
+    "slug": "hero-reception-ai",
+    "source": "../quellen/muh-hero/hero-geschaeftseingang-v1.png",
+    "width": 1086,
+    "height": 1448,
+    "role": "Fully AI-generated illustration, visibly labeled; not a MUH project photograph",
+    "permission": "Greg explicitly approved homepage integration",
+    "derivatives": [
+      480,
+      800,
+      1086
+    ]
+  },
+  {
+    "slug": "private-home",
+    "source": "Wohnungsumbau4.jpg",
+    "role": "Authentic supplied residential photo, no AI edit"
+  },
+  {
+    "slug": "project-private",
+    "source": "Wohnungssanierung3-1.jpg",
+    "role": "Authentic supplied residential photo, example description labeled"
+  }
+]

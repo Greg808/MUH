@@ -1,0 +1,5 @@
+---
+interface Props { columns?: "three" | "single"; as?: "div" | "ul" | "ol"; }
+const { columns = "three", as: Element = "div" }: Props = Astro.props;
+---
+<Element class:list={["m-0 grid list-none gap-columns p-0 [&>*]:min-w-0", columns === "three" && "md:grid-cols-2 lg:grid-cols-3"]}><slot /></Element>

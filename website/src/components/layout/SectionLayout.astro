@@ -1,0 +1,15 @@
+---
+interface Props {
+  variant?: "single" | "equal" | "wide-left";
+  class?: string;
+}
+const { variant = "single", class: className } = Astro.props;
+const columns = {
+  single: "grid-cols-1",
+  equal: "grid-cols-1 md:grid-cols-2",
+  "wide-left": "grid-cols-1 md:grid-cols-2 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]",
+};
+---
+<div class:list={["grid items-stretch gap-columns [&>*]:min-w-0", columns[variant], className]}>
+  <slot />
+</div>

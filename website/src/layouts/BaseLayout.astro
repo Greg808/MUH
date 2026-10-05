@@ -1,0 +1,41 @@
+---
+import "@styles/global.css";
+import "@styles/home.css";
+import { site, starterContent } from "@content/site";
+interface Props {
+  title?: string; description?: string; canonicalPath?: string;
+  ogImage?: string; ogImageAlt?: string;
+  faviconIco?: string; appleTouchIcon?: string;
+  themeColorLight?: string; themeColorDark?: string;
+}
+const { title = site.name, description = site.description, canonicalPath = Astro.url.pathname, ogImage, ogImageAlt, faviconIco, appleTouchIcon, themeColorLight, themeColorDark } = Astro.props;
+const canonicalUrl = site.url ? new URL(canonicalPath, site.url).toString() : undefined;
+---
+<!doctype html>
+<html lang={site.locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={site.indexable && site.url ? "index,follow" : "noindex,follow"} />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImage && ogImageAlt && <meta property="og:image:alt" content={ogImageAlt} />}
+    <meta name="color-scheme" content="light" />
+    <link rel="preload" href="/fonts/SourceSans3VF-Upright.woff2" as="font" type="font/woff2" crossorigin />
+    {themeColorLight && <meta name="theme-color" content={themeColorLight} media="(prefers-color-scheme: light)" />}
+    {themeColorDark && <meta name="theme-color" content={themeColorDark} media="(prefers-color-scheme: dark)" />}
+    {faviconIco && <link rel="icon" href={faviconIco} sizes="32x32" />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {appleTouchIcon && <link rel="apple-touch-icon" href={appleTouchIcon} sizes="180x180" />}
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-brand-surface focus:p-4">{starterContent.skip}</a>
+    <slot />
+  </body>
+</html>

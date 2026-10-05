@@ -1,0 +1,77 @@
+{
+  "workflowVersion": 1,
+  "entries": [
+    {
+      "id": "muh-commercial-home",
+      "observation": "Gewerbliche Kunden priorisieren und ausschließlich Homepage umsetzen.",
+      "cause": "Bestandsseite mischt private und gewerbliche Aufgaben.",
+      "source": "Greg, 16.09.2026",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/pages/index.astro",
+      "changeEvidence": "Ausschließlich Route /, Gewerbe priorisiert; drei Projektbeispiele und zwei Musterstimmen sichtbar gekennzeichnet. Prüfung im aktuellen Handoff."
+    },
+    {
+      "id": "muh-presentation-copy",
+      "observation": "Dummy-Kundenstimmen und allgemeine Projektbeschreibungen für Designpräsentation ergänzen.",
+      "cause": "Originalinhalte werden von Greg erst nach der Präsentation organisiert.",
+      "source": "Greg, 16.09.2026: Paln passt",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/content/site.ts",
+      "changeEvidence": "Ausschließlich Route /, Gewerbe priorisiert; drei Projektbeispiele und zwei Musterstimmen sichtbar gekennzeichnet. Prüfung im aktuellen Handoff."
+    },
+    {
+      "id": "muh-ai-hero",
+      "observation": "Greg akzeptiert die KI-Überarbeitung des Altbau-Eingangs und bittet um Umsetzung.",
+      "cause": "Bisheriges Büro-Hauptbild ist fotografisch zu schwach.",
+      "source": "Greg: passt gut bitte umsetzen",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/components/sections/Hero.astro",
+      "changeEvidence": "Freigegebene KI-Datei als responsive WebP eingebaut; wahrheitsgemäße Bildunterschrift und Alt-Text; Hochformat angepasst."
+    },
+    {
+      "id": "muh-comparison-demo",
+      "observation": "Vorher-Nachher auf Homepage mit KI/Original-Umschaltung; freigegebene neue Fotos verwenden; Büro-Projektbild entfernen.",
+      "cause": "Greg möchte die Bildüberarbeitung direkt im Homepage-Entwurf präsentieren.",
+      "source": "Greg, aktueller Auftrag",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/components/sections/ProjectComparison.astro",
+      "changeEvidence": "Vergleich mit nativen Radios, Range, Drag und Ladefehlerbehandlung. Hotel- und Fassadenfotos ersetzt, Büro-Projektbild entfernt. Originale sind klassisch angeglichen und entsprechend gekennzeichnet."
+    },
+    {
+      "id": "muh-generated-reception-hero",
+      "observation": "Neues generiertes Empfangsmotiv auf Homepage einbauen.",
+      "cause": "Eigenständiges Hero-Motiv statt Wiederholung des Vergleichsprojekts.",
+      "source": "Greg: bittee bild einbauen auf home",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/components/sections/Hero.astro",
+      "changeEvidence": "Responsive WebP-Dateien, korrekter Alt-Text und sichtbarer Hinweis KI-generierte Illustration."
+    },
+    {
+      "id": "muh-equal-audiences",
+      "observation": "B2B und B2C gleichwertig umbauen; bestehendes Design gefällt und soll erhalten bleiben.",
+      "cause": "Briefing wechselt von Gewerbepriorität zu gleichwertigen Zielgruppen.",
+      "source": "Greg, aktueller Auftrag",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/content/site.ts",
+      "changeEvidence": "Zwei gleich große Zielgruppen, neutraler Hero/Planung/Kontakt, private Leistungen und Wohnungsprojekt sowie private Musterstimme ergänzt. Bestehende Farben, Typografie, Komponenten, Reihenfolge und Vergleich erhalten."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+---
+import SectionFrame from '../layout/SectionFrame.astro';
+import { audiences } from '@content/site';
+---
+<SectionFrame id="einsatzbereiche" eyebrow="Privat & Gewerbe" title="Ihre Räume. Unser Handwerk." text="Zuhause oder am Arbeitsplatz: Wir planen die Renovierung so, dass sie zu Ihren Räumen und deren Nutzung passt." tone="soft">
+  <div class="audience-grid">{audiences.map(item => <article class="audience-card">
+    <img src={`/images/${item.image}-800.webp`} srcset={`/images/${item.image}-480.webp 480w, /images/${item.image}-800.webp 800w`} sizes="(min-width: 1200px) 584px, (min-width: 640px) 46vw, calc(100vw - 48px)" alt={item.alt} width="800" height="600" loading="lazy" decoding="async" />
+    <h3>{item.title}</h3><p>{item.text}</p><p class="detail">{item.detail}</p><a class="text-link" href="#kontakt">{item.action} <span aria-hidden="true">↗</span></a>
+  </article>)}</div>
+</SectionFrame>

@@ -1,0 +1,105 @@
+---
+---
+<article class="project-comparison" aria-labelledby="comparison-title">
+  <div class="comparison-copy">
+    <p class="project-meta">Altbau · Eingangsbereich</p>
+    <h3 id="comparison-title">Ein Eingang. Zwei Zustände.</h3>
+    <p class="description">Vergleichen Sie den Eingangsbereich vor und nach der Renovierung. Für diese Demo können Sie zwischen den Projektfotos und ihrer KI-Überarbeitung wechseln.</p>
+    <fieldset class="comparison-modes" hidden>
+      <legend>Bilddarstellung</legend>
+      <label><input type="radio" name="comparison-mode" value="ai" checked /> KI-bearbeitet</label>
+      <label><input type="radio" name="comparison-mode" value="original" /> Originalfotos</label>
+    </fieldset>
+    <p class="comparison-note" id="comparison-note" aria-live="polite">KI-bearbeitete Visualisierung auf Basis von Projektfotos. Material- und Architekturdetails können von den Originalen abweichen.</p>
+    <a class="text-link" href="#kontakt">Ihr Vorhaben besprechen <span aria-hidden="true">↗</span></a>
+  </div>
+  <figure>
+    <div class="comparison-stage" style="--split:50%">
+      <img class="comparison-after" src="/images/compare-ai-after.webp" width="1086" height="1448" alt="KI-bearbeitete Nachher-Ansicht des Altbau-Eingangs mit grauen Wänden und Stuckgewölbe" loading="lazy" decoding="async" />
+      <img class="comparison-before" src="/images/compare-ai-before.webp" width="1086" height="1448" alt="KI-bearbeitete Vorher-Ansicht mit gelblichen Wänden und dunklem Läufer" loading="lazy" decoding="async" />
+      <span class="comparison-label before-label">Vorher</span><span class="comparison-label after-label">Nachher</span>
+      <span class="comparison-divider" aria-hidden="true"><span>↔</span></span>
+    </div>
+    <div class="comparison-controls" hidden>
+      <button type="button" data-position="100">Vorher</button>
+      <label class="sr-only" for="comparison-position">Anteil des Vorher-Bildes</label>
+      <input id="comparison-position" type="range" min="0" max="100" value="50" aria-describedby="comparison-note comparison-help" />
+      <button type="button" data-position="0">Nachher</button>
+    </div>
+    <figcaption id="comparison-help">Vorher links · Nachher rechts. Mit Maus, Finger oder Pfeiltasten vergleichen.</figcaption>
+    <noscript><p class="sample-note">Statischer KI-Vergleich. <a href="/images/compare-original-before.webp">Projektfoto vorher</a> · <a href="/images/compare-original-after.webp">Projektfoto nachher</a></p></noscript>
+  </figure>
+</article>
+<script>
+const root = document.querySelector<HTMLElement>('.project-comparison');
+if (root) {
+  const stage = root.querySelector<HTMLElement>('.comparison-stage')!;
+  const range = root.querySelector<HTMLInputElement>('#comparison-position')!;
+  const before = root.querySelector<HTMLImageElement>('.comparison-before')!;
+  const after = root.querySelector<HTMLImageElement>('.comparison-after')!;
+  const note = root.querySelector<HTMLElement>('.comparison-note')!;
+  const beforeLabel = root.querySelector<HTMLElement>('.before-label')!;
+  const afterLabel = root.querySelector<HTMLElement>('.after-label')!;
+  const modes = root.querySelector<HTMLFieldSetElement>('.comparison-modes')!;
+  const messages = {
+    ai: 'KI-bearbeitete Visualisierung auf Basis von Projektfotos. Material- und Architekturdetails können von den Originalen abweichen.',
+    original: 'Originalfotos, klassisch in Ausschnitt, Perspektive und Belichtung angeglichen. Keine generierten Bildinhalte; kleine Perspektivversätze bleiben sichtbar.',
+  };
+  let currentMode: 'ai' | 'original' = 'ai';
+  let request = 0;
+  function setPosition(value: number) {
+    const position = Math.max(0, Math.min(100, value));
+    range.value = String(position);
+    stage.style.setProperty('--split', `${position}%`);
+    range.setAttribute('aria-valuetext', `${Math.round(position)} Prozent vorher`);
+    beforeLabel.style.visibility = position < 15 ? 'hidden' : 'visible';
+    afterLabel.style.visibility = position > 85 ? 'hidden' : 'visible';
+  }
+  range.addEventListener('input', () => setPosition(Number(range.value)));
+  root.querySelectorAll<HTMLButtonElement>('[data-position]').forEach(button => button.addEventListener('click', () => setPosition(Number(button.dataset.position))));
+  function move(event: PointerEvent) {
+    const box = stage.getBoundingClientRect();
+    setPosition((event.clientX - box.left) / box.width * 100);
+  }
+  stage.addEventListener('pointerdown', event => {
+    if (!event.isPrimary || event.button !== 0) return;
+    stage.setPointerCapture(event.pointerId);
+    move(event);
+  });
+  stage.addEventListener('pointermove', event => { if (stage.hasPointerCapture(event.pointerId)) move(event); });
+  stage.addEventListener('pointerup', event => { if (stage.hasPointerCapture(event.pointerId)) stage.releasePointerCapture(event.pointerId); });
+  modes.addEventListener('change', async () => {
+    const selected = modes.querySelector<HTMLInputElement>('input:checked')!;
+    const mode = selected.value === 'original' ? 'original' : 'ai';
+    const ticket = ++request;
+    stage.setAttribute('aria-busy', 'true');
+    try {
+      const images = await Promise.all(['before', 'after'].map(async state => {
+        const image = new Image();
+        image.src = `/images/compare-${mode}-${state}.webp`;
+        await image.decode();
+        return image;
+      }));
+      if (ticket !== request) return;
+      [before, after].forEach((image, index) => {
+        image.src = images[index].src;
+        image.width = images[index].naturalWidth;
+        image.height = images[index].naturalHeight;
+      });
+      before.alt = `${mode === 'ai' ? 'KI-bearbeitete' : 'Originale'} Vorher-Ansicht: Altbau-Eingang mit gelblichen Wänden und dunklem Läufer`;
+      after.alt = `${mode === 'ai' ? 'KI-bearbeitete' : 'Originale'} Nachher-Ansicht: Altbau-Eingang mit grauen Wänden und Stuckgewölbe`;
+      currentMode = mode;
+      note.textContent = messages[mode];
+    } catch {
+      if (ticket !== request) return;
+      modes.querySelector<HTMLInputElement>(`input[value="${currentMode}"]`)!.checked = true;
+      note.textContent = `${messages[currentMode]} Die andere Darstellung konnte nicht geladen werden. Bitte erneut versuchen.`;
+    } finally {
+      if (ticket === request) stage.removeAttribute('aria-busy');
+    }
+  });
+  modes.hidden = false;
+  root.querySelector<HTMLElement>('.comparison-controls')!.hidden = false;
+  setPosition(50);
+}
+</script>

@@ -1,0 +1,7 @@
+---
+import SectionFrame from '../layout/SectionFrame.astro';
+import { testimonials } from '@content/site';
+---
+<SectionFrame id="kundenstimmen" eyebrow="Stimmen zur Zusammenarbeit" title="Gute Zusammenarbeit bleibt in Erinnerung." text="Die folgenden Stimmen sind Beispieltexte für diesen Entwurf. Echte Rückmeldungen unserer Kunden folgen." class="voices">
+  <div class="voices-grid">{testimonials.map(item => <figure class="voice"><span class="quote-mark" aria-hidden="true">“</span><blockquote>{item.quote}</blockquote><figcaption><span class="sample-tag">Musterstimme · frei formuliert</span><span>{item.role}</span></figcaption></figure>)}</div>
+</SectionFrame>

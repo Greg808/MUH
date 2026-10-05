@@ -1,0 +1,8 @@
+---
+import SectionFrame from '../layout/SectionFrame.astro';
+import { services } from '@content/site';
+---
+<SectionFrame id="leistungen" eyebrow="Was wir für Sie übernehmen" title="Vom einzelnen Raum bis zur Sanierung." text="Wir stimmen die Leistungen auf Ihr Vorhaben ab und koordinieren die Fachfirmen, die dafür gebraucht werden.">
+  <div class="services-grid">{services.map(item => <article class="service"><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
+  <div class="private-note"><p><strong>Was steht bei Ihnen an?</strong><br />Ob einzelner Raum, Wohnung, Haus oder Geschäftsfläche: Wir besprechen den passenden Umfang.</p><a class="text-link" href="#kontakt">Vorhaben besprechen <span aria-hidden="true">↗</span></a></div>
+</SectionFrame>

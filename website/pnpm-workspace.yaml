@@ -1,0 +1,6 @@
+# Single-project settings; dependency install scripts are explicitly allowed.
+allowBuilds:
+  esbuild: true
+  sharp: true
+# Verification must never trigger an implicit dependency installation.
+verifyDepsBeforeRun: error

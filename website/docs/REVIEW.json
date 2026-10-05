@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "source": "ff342d58ec0f7bc6eee28eb660ff9ff1ecf43f97ddfac25fa3236286393b656f",
+  "build": "ffe1b0948eae3484760a1268347492bbce8fd681f69665342d3424f42ebe3095",
+  "decisions": "e976106d1a6192969cb528a8bd0732e4471adc19371fb5e957f67a11fe680a2a",
+  "reviews": {
+    "code": {
+      "reviewer": "Codex – eigene Code-/Bedienungsprüfung",
+      "result": "pass",
+      "observation": "24 Browserfälle sowie Astro check und Build bestanden. Gleichwertige Zielgruppeneinstiege zusätzlich getestet; bestehende Vergleichsfunktionen weiterhin geprüft.",
+      "evidence": [
+        {
+          "path": ".local-work/review/balanced/observations.md",
+          "sha256": "c0249b1dcd2d7162a671cbb4c75f3586efeeaa1e9b795be76b78c1152eb6a2d3"
+        }
+      ]
+    },
+    "content": {
+      "reviewer": "Codex – Quellenabgleich",
+      "result": "pass",
+      "observation": "Privat und Gewerbe in allen relevanten Sektionen gleichwertig; je ein Projekt und eine Musterstimme. Zwei originale Wohnungsbilder ergänzt, Muster- und KI-Hinweise erhalten.",
+      "evidence": [
+        {
+          "path": ".local-work/review/balanced/observations.md",
+          "sha256": "c0249b1dcd2d7162a671cbb4c75f3586efeeaa1e9b795be76b78c1152eb6a2d3"
+        }
+      ]
+    },
+    "visual": {
+      "reviewer": "Codex – tatsächliche visuelle Eigenprüfung",
+      "result": "pass",
+      "observation": "Gesamtseite bei 390/768/1440/1920px gesichtet; Hero zusätzlich bei 320px und 200% Schrift. Bestehende Gestaltung erhalten; gleich große Zielgruppenkarten ohne Überlagerung.",
+      "evidence": [
+        {
+          "path": ".local-work/review/balanced/observations.md",
+          "sha256": "c0249b1dcd2d7162a671cbb4c75f3586efeeaa1e9b795be76b78c1152eb6a2d3"
+        }
+      ],
+      "views": [
+        {
+          "route": "/",
+          "width": 1440,
+          "textScale": 1,
+          "observation": "Gesamtfluss anhand aktueller Screenshotstreifen gesichtet; gleichwertige Zielgruppen, Bildausschnitte und Lesbarkeit geprüft.",
+          "evidence": {
+            "path": ".local-work/review/balanced/full-1440.png",
+            "sha256": "4ed2f44af470f3a9abdc098cdabce708bde91fb63d468bfc9670af865648c8a6"
+          }
+        },
+        {
+          "route": "/",
+          "width": 390,
+          "textScale": 1,
+          "observation": "Gesamtfluss anhand aktueller Screenshotstreifen gesichtet; gleichwertige Zielgruppen, Bildausschnitte und Lesbarkeit geprüft.",
+          "evidence": {
+            "path": ".local-work/review/balanced/full-390.png",
+            "sha256": "bdb5780f1469cbecd9e6681fe7d2802a964bc807095493ab17408593e5de1937"
+          }
+        },
+        {
+          "route": "/",
+          "width": 768,
+          "textScale": 1,
+          "observation": "Gesamtfluss anhand aktueller Screenshotstreifen gesichtet; gleichwertige Zielgruppen, Bildausschnitte und Lesbarkeit geprüft.",
+          "evidence": {
+            "path": ".local-work/review/balanced/full-768.png",
+            "sha256": "bd5abb3da66cc075765832e7ea7dff02c02e344279245eaea4295931ce6aa42f"
+          }
+        },
+        {
+          "route": "/",
+          "width": 1920,
+          "textScale": 1,
+          "observation": "Gesamtfluss anhand aktueller Screenshotstreifen gesichtet; gleichwertige Zielgruppen, Bildausschnitte und Lesbarkeit geprüft.",
+          "evidence": {
+            "path": ".local-work/review/balanced/full-1920.png",
+            "sha256": "d54209157b36fe67787f5088df128459b4516b807654ecc5fd3eb79d286478de"
+          }
+        },
+        {
+          "route": "/",
+          "width": 320,
+          "textScale": 2,
+          "observation": "Hero bei 200% Schrift visuell gesichtet; vollständiger Screenshot und Überlaufprüfung für beide Vergleichsmodi vorhanden.",
+          "evidence": {
+            "path": ".local-work/review/balanced/full-320.png",
+            "sha256": "56b52bdb669da166ced6e3103d95f12a4a9aee26da5405e2208e1ec7095eb2b0"
+          }
+        }
+      ]
+    }
+  },
+  "learnings": [
+    {
+      "id": "shared-edges",
+      "result": "applied",
+      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+    },
+    {
+      "id": "spacing-roles",
+      "result": "applied",
+      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+    },
+    {
+      "id": "whole-draft",
+      "result": "applied",
+      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+    },
+    {
+      "id": "concrete-copy",
+      "result": "applied",
+      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+    },
+    {
+      "id": "separate-approval",
+      "result": "applied",
+      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+    },
+    {
+      "id": "full-width-raumwerk",
+      "result": "not-applicable",
+      "reason": "Raumwerk-Projektgestaltung ist keine MUH-Vorgabe."
+    },
+    {
+      "id": "office-scene",
+      "result": "not-applicable",
+      "reason": "Raumwerk-Projektgestaltung ist keine MUH-Vorgabe."
+    },
+    {
+      "id": "onepager-acceptance-tests",
+      "result": "applied",
+      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+    },
+    {
+      "id": "design-responsibility-before-presentation",
+      "result": "applied",
+      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+    }
+  ],
+  "feedback": [
+    {
+      "id": "muh-commercial-home",
+      "result": "resolved",
+      "reason": "Homepage-Umfang und ausdrücklich erlaubte Musterinhalte umgesetzt und geprüft.",
+      "evidence": {
+        "path": ".local-work/review/observations.md",
+        "sha256": "7402232a7df2c4436b84389af488553c9e55c7a9066830f20b49dc063103b902"
+      }
+    },
+    {
+      "id": "muh-presentation-copy",
+      "result": "resolved",
+      "reason": "Homepage-Umfang und ausdrücklich erlaubte Musterinhalte umgesetzt und geprüft.",
+      "evidence": {
+        "path": ".local-work/review/observations.md",
+        "sha256": "7402232a7df2c4436b84389af488553c9e55c7a9066830f20b49dc063103b902"
+      }
+    },
+    {
+      "id": "muh-ai-hero",
+      "result": "resolved",
+      "reason": "Freigegebene Bilder und Homepage-Vergleich integriert; sichtbare Hinweise, Umschaltung und responsives Layout geprüft.",
+      "evidence": {
+        "path": ".local-work/review/comparison/observations.md",
+        "sha256": "e9fe85cbc595c57becc5bcd7ab995a7aa4f4f26f329227f40337c4d16002edc5"
+      }
+    },
+    {
+      "id": "muh-comparison-demo",
+      "result": "resolved",
+      "reason": "Freigegebene Bilder und Homepage-Vergleich integriert; sichtbare Hinweise, Umschaltung und responsives Layout geprüft.",
+      "evidence": {
+        "path": ".local-work/review/comparison/observations.md",
+        "sha256": "e9fe85cbc595c57becc5bcd7ab995a7aa4f4f26f329227f40337c4d16002edc5"
+      }
+    },
+    {
+      "id": "muh-generated-reception-hero",
+      "result": "resolved",
+      "reason": "Neues generiertes Empfangsmotiv mit korrekter Kennzeichnung eingebunden und an fünf Breiten geprüft.",
+      "evidence": {
+        "path": ".local-work/review/comparison/observations.md",
+        "sha256": "e9fe85cbc595c57becc5bcd7ab995a7aa4f4f26f329227f40337c4d16002edc5"
+      }
+    },
+    {
+      "id": "muh-equal-audiences",
+      "result": "resolved",
+      "reason": "Aktuelle Vorgabe ersetzt den bisherigen Gewerbeschwerpunkt. Privat und Gewerbe gleichwertig im bestehenden Design integriert und geprüft.",
+      "evidence": {
+        "path": ".local-work/review/balanced/observations.md",
+        "sha256": "c0249b1dcd2d7162a671cbb4c75f3586efeeaa1e9b795be76b78c1152eb6a2d3"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "presentation-content",
+      "observation": "Originalstimmen, bestätigte Projektdetails, Kontakte und rechtliche Angaben fehlen.",
+      "severity": "nonblocking",
+      "status": "open",
+      "limitation": "Für autorisierte Designpräsentation zulässig; vor Veröffentlichung ersetzen und freigeben."
+    },
+    {
+      "id": "photo-resolution",
+      "observation": "Einige Original-Projektbilder sind nur 800px breit.",
+      "severity": "nonblocking",
+      "status": "open",
+      "limitation": "Bei 2x begrenzte Bilddetails; höher aufgelöste Originale nachliefern, sofern vorhanden."
+    },
+    {
+      "id": "ai-image-fidelity",
+      "observation": "KI-Version verändert einzelne Material-/Architekturdetails; Originalmodus hat Restparallaxe.",
+      "severity": "nonblocking",
+      "status": "open",
+      "limitation": "Autorisiert als sichtbar gekennzeichnete Demo; kein unveränderter fotografischer Nachweis."
+    }
+  ]
+}

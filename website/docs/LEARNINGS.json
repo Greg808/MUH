@@ -1,0 +1,109 @@
+{
+  "workflowVersion": 1,
+  "entries": [
+    {
+      "id": "shared-edges",
+      "observation": "Related headings, body, lines and images must share a deliberate alignment.",
+      "cause": "Sections were designed independently with unexplained offsets.",
+      "source": "Greg feedback in Raumwerk task, 2026-09-09; EOD reports 2026-09-03/08/09",
+      "project": "raumwerk",
+      "scope": "pattern",
+      "status": "implemented",
+      "destination": "starter",
+      "target": "docs/WORKFLOW.md",
+      "changeEvidence": "workflow/feedback-to-patterns: concrete contract, shared tokens or explicit test sequence"
+    },
+    {
+      "id": "spacing-roles",
+      "observation": "Recurring groups need recurring spacing.",
+      "cause": "Repeated local gap values had no shared role.",
+      "source": "Greg feedback in Raumwerk task, 2026-09-09; EOD reports 2026-09-03/08/09",
+      "project": "raumwerk",
+      "scope": "pattern",
+      "status": "implemented",
+      "destination": "starter",
+      "target": "src/styles/global.css",
+      "changeEvidence": "workflow/feedback-to-patterns: concrete contract, shared tokens or explicit test sequence"
+    },
+    {
+      "id": "whole-draft",
+      "observation": "First complete the design; do not wait for a full suite after every small experiment.",
+      "cause": "Prototype and final acceptance were mixed; test commands hid rebuilds.",
+      "source": "Greg feedback in Raumwerk task, 2026-09-09; EOD reports 2026-09-03/08/09",
+      "project": "raumwerk",
+      "scope": "baseline",
+      "status": "implemented",
+      "destination": "starter",
+      "target": "docs/WORKFLOW.md",
+      "changeEvidence": "workflow/feedback-to-patterns: concrete contract, shared tokens or explicit test sequence"
+    },
+    {
+      "id": "concrete-copy",
+      "observation": "The first draft must answer user questions with specific copy.",
+      "cause": "A section list and short headlines were treated as a content strategy.",
+      "source": "Greg feedback in Raumwerk task, 2026-09-09; EOD reports 2026-09-03/08/09",
+      "project": "raumwerk",
+      "scope": "pattern",
+      "status": "implemented",
+      "destination": "starter",
+      "target": "DESIGN.md",
+      "changeEvidence": "workflow/feedback-to-patterns: concrete contract, shared tokens or explicit test sequence"
+    },
+    {
+      "id": "separate-approval",
+      "observation": "Technical tests did not establish design quality.",
+      "cause": "Visual self-review and customer acceptance were conflated.",
+      "source": "Greg feedback in Raumwerk task, 2026-09-09; EOD reports 2026-09-03/08/09",
+      "project": "raumwerk",
+      "scope": "baseline",
+      "status": "implemented",
+      "destination": "starter",
+      "target": "docs/WORKFLOW.md",
+      "changeEvidence": "workflow/feedback-to-patterns: concrete contract, shared tokens or explicit test sequence"
+    },
+    {
+      "id": "full-width-raumwerk",
+      "observation": "Use full-width standalone body copy in this design.",
+      "cause": "A previous width cap persisted after project feedback.",
+      "source": "Greg feedback in Raumwerk task, 2026-09-09; EOD reports 2026-09-03/08/09",
+      "project": "raumwerk",
+      "scope": "project",
+      "status": "recorded",
+      "destination": "project"
+    },
+    {
+      "id": "office-scene",
+      "observation": "More offices, equal desk sizes and a private office; keep approved motion.",
+      "cause": "The initial scene did not match the desired illustrative scope.",
+      "source": "Greg feedback in Raumwerk task, 2026-09-09; EOD reports 2026-09-03/08/09",
+      "project": "raumwerk",
+      "scope": "project",
+      "status": "recorded",
+      "destination": "project"
+    },
+    {
+      "id": "onepager-acceptance-tests",
+      "observation": "Starter onepagers need individual headings, internal contact anchors and narrow enlarged-text screenshot evidence.",
+      "cause": "Inherited tests asserted placeholder copy and an external first link; screenshot generation omitted the required 320px / 200% view.",
+      "source": "Greg authorized the two remaining Starter onepager fixes on 2026-09-10; Premium and multi-page work deferred.",
+      "project": "astro-starter",
+      "scope": "baseline",
+      "status": "implemented",
+      "destination": "starter",
+      "target": "tests/e2e",
+      "changeEvidence": "tests/e2e/site.spec.ts and screenshots.spec.ts; template-maintenance/ONEPAGER-CHECKS-REVIEW.md records positive and negative integration results. No independent different-project trial is claimed."
+    },
+    {
+      "id": "design-responsibility-before-presentation",
+      "observation": "Friday design lessons must inform subsequent customer work without another senior-designer prompt.",
+      "cause": "General lessons remained local to Raumwerk while later work reused an older starter.",
+      "source": "Raumwerk DAY-REVIEW-2026-09-11; Greg explicitly authorized shared principles and Gruppe2000 pilot on 2026-09-14.",
+      "project": "raumwerk",
+      "scope": "baseline",
+      "status": "implemented",
+      "destination": "starter",
+      "target": "docs/WORKFLOW.md",
+      "changeEvidence": "Shared design responsibility added to the starter and explicitly applied to Gruppe2000. Pilot feedback and MUH trial remain pending; no measured improvement claimed."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+---
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  titleId?: string;
+  text?: string;
+  as?: "h2" | "h3";
+  dark?: boolean;
+  align?: "left" | "center" | "right" | "full";
+}
+
+const { eyebrow, title, titleId, text, as = "h2", dark = false, align = "left" } : Props = Astro.props;
+const Heading = as;
+const alignment = {
+  left: "justify-items-start",
+  center: "justify-items-center text-center",
+  right: "justify-items-end text-right",
+  full: "justify-items-start",
+};
+---
+<header class:list={["grid min-w-0 grid-cols-1 gap-copy", alignment[align]]}>
+  {eyebrow && <p class:list={["m-0 text-xs font-black uppercase tracking-normal", dark ? "text-white" : "text-brand-accent-strong"]}>{eyebrow}</p>}
+  {title && <Heading id={titleId} class:list={["m-0 max-w-full font-extrabold leading-[1.08] tracking-tight", as === "h2" ? "section-heading" : "text-2xl", dark ? "text-white" : "text-brand-text"]}>{title}</Heading>}
+  {text && <p class:list={["max-w-full m-0 text-intro leading-normal", dark ? "text-white/75" : "text-brand-muted"]}>{text}</p>}
+</header>

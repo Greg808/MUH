@@ -1,0 +1,23 @@
+# Local archive, original sources and comparison variants
+/archiv/
+/quellen/
+/varianten/
+
+.DS_Store
+node_modules/
+dist/
+.astro/
+.local-work/
+test-results/
+playwright-report/
+
+# Local environment files; sanitized examples may be versioned
+.env
+.env.*
+!.env.example
+
+# Local logs
+*.log
+
+# Local browser artifacts
+.playwright-mcp/

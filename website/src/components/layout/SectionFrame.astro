@@ -1,0 +1,54 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+
+interface Props {
+  id?: string;
+  eyebrow?: string;
+  title?: string;
+  text?: string;
+  titleId?: string;
+  tone?: "default" | "soft" | "dark";
+  headerLayout?: "stacked" | "split";
+  headerAlign?: "left" | "center" | "right" | "full";
+  class?: string;
+}
+
+const {
+  id,
+  eyebrow,
+  title,
+  text,
+  titleId,
+  tone = "default",
+  headerAlign = "left",
+  headerLayout = "stacked",
+  class: className = "",
+} = Astro.props;
+
+const hasHeader = eyebrow || title || text;
+const headingId = titleId ?? (id ? `${id}-title` : undefined);
+const toneClasses = {
+  default: "bg-brand-surface text-brand-text",
+  soft: "bg-brand-soft text-brand-text",
+  dark: "bg-brand-ink text-white",
+};
+---
+
+<section
+  id={id}
+  class:list={[
+    "section-space",
+    toneClasses[tone],
+    className,
+  ]}
+  aria-labelledby={title ? headingId : undefined}
+>
+  <div class:list={["site-container grid items-start gap-content", headerLayout === "split" && "lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]"]}>
+    {
+      hasHeader && (
+        <SectionHeader eyebrow={eyebrow} title={title} titleId={headingId} text={text} dark={tone === "dark"} align={headerAlign} />
+      )
+    }
+    <div class="min-w-0"><slot /></div>
+  </div>
+</section>

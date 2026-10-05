@@ -1,0 +1,24 @@
+---
+import { navigation } from '@content/site';
+import ButtonLink from './ui/ButtonLink.astro';
+---
+<header class="site-header">
+  <div class="site-container header-inner">
+    <a class="brand" href="#start" aria-label="MUH – zur Startseite"><img src="/images/muh-logo.webp" alt="MUH Malerei & Handwerk – Wir kümmern uns darum" width="900" height="236" /></a>
+    <nav class="desktop-nav" aria-label="Hauptnavigation">{navigation.map(item => <a href={item.href}>{item.label}</a>)}</nav>
+    <ButtonLink href="#kontakt" class="header-cta">Projekt besprechen <span aria-hidden="true">↗</span></ButtonLink>
+    <details class="mobile-menu">
+      <summary>Menü <span aria-hidden="true">☰</span></summary>
+      <nav aria-label="Mobile Navigation">{navigation.map(item => <a href={item.href}>{item.label}</a>)}<a href="#kontakt">Kontakt aufnehmen ↗</a></nav>
+    </details>
+  </div>
+</header>
+<script>
+  const menu = document.querySelector<HTMLDetailsElement>('.mobile-menu');
+  menu?.addEventListener('click', event => {
+    if ((event.target as HTMLElement).closest('a')) menu.open = false;
+  });
+  menu?.addEventListener('keydown', event => {
+    if (event.key === 'Escape') { menu.open = false; menu.querySelector('summary')?.focus(); }
+  });
+</script>

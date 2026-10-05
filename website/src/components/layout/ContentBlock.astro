@@ -1,0 +1,17 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+interface Props {
+  eyebrow?: string;
+  title: string;
+  titleId?: string;
+  text?: string;
+  as?: "h2" | "h3";
+  dark?: boolean;
+}
+
+const props: Props = Astro.props;
+---
+<div class="grid min-w-0 grid-cols-1 content-start gap-copy">
+  <SectionHeader {...props} />
+  <slot />
+</div>
