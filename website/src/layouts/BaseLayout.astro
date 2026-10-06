@@ -2,13 +2,16 @@
 import "@styles/global.css";
 import "@styles/home.css";
 import { site, starterContent } from "@content/site";
+import { brand } from "@content/brand";
 interface Props {
   title?: string; description?: string; canonicalPath?: string;
-  ogImage?: string; ogImageAlt?: string;
+  ogImage?: string; ogImageAlt?: string; ogImageWidth?: number; ogImageHeight?: number;
   faviconIco?: string; appleTouchIcon?: string;
   themeColorLight?: string; themeColorDark?: string;
 }
-const { title = site.name, description = site.description, canonicalPath = Astro.url.pathname, ogImage, ogImageAlt, faviconIco, appleTouchIcon, themeColorLight, themeColorDark } = Astro.props;
+const { title = site.name, description = site.description, canonicalPath = Astro.url.pathname, ogImage = brand.socialImage, ogImageAlt = brand.socialImageAlt, ogImageWidth = 1200, ogImageHeight = 630, faviconIco = "/favicon.ico", appleTouchIcon = "/apple-touch-icon.png", themeColorLight, themeColorDark } = Astro.props;
+// Keep unknown production domains unset. Astro.url is only a local preview fallback.
+const socialImageUrl = new URL(ogImage, site.url || Astro.url.origin).href;
 const canonicalUrl = site.url ? new URL(canonicalPath, site.url).toString() : undefined;
 ---
 <!doctype html>
@@ -24,14 +27,25 @@ const canonicalUrl = site.url ? new URL(canonicalPath, site.url).toString() : un
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
-    {ogImage && <meta property="og:image" content={ogImage} />}
-    {ogImage && ogImageAlt && <meta property="og:image:alt" content={ogImageAlt} />}
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:locale" content={site.locale.replace('-', '_')} />
+    <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:image:width" content={String(ogImageWidth)} />
+    <meta property="og:image:height" content={String(ogImageHeight)} />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
     <meta name="color-scheme" content="light" />
     <link rel="preload" href="/fonts/SourceSans3VF-Upright.woff2" as="font" type="font/woff2" crossorigin />
     {themeColorLight && <meta name="theme-color" content={themeColorLight} media="(prefers-color-scheme: light)" />}
     {themeColorDark && <meta name="theme-color" content={themeColorDark} media="(prefers-color-scheme: dark)" />}
-    {faviconIco && <link rel="icon" href={faviconIco} sizes="32x32" />}
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {faviconIco && <link rel="icon" href={faviconIco} type="image/x-icon" sizes="16x16 32x32 48x48" />}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+    <link rel="manifest" href="/site.webmanifest" />
     {appleTouchIcon && <link rel="apple-touch-icon" href={appleTouchIcon} sizes="180x180" />}
   </head>
   <body>

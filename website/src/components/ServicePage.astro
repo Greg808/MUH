@@ -14,7 +14,7 @@ import { workIcons } from '../assets/icons/lucide';
 interface Props { content: ServicePageContent; }
 const { content } = Astro.props;
 ---
-<BaseLayout title={`${content.title} · MUH`} description={content.description} themeColorLight="#ffffff">
+<BaseLayout title={`${content.title} · MUH`} description={content.description} themeColorLight="#ffffff" ogImage={`/social/${content.slug}.png`} ogImageAlt={`${content.title} · MUH – Malerei & Handwerk; originales Projektfoto.`}>
   <SiteHeader />
   <main id="main" class="service-page" tabindex="-1">
     <section id="start" class="hero section-space service-intro" aria-labelledby="service-title">

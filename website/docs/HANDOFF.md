@@ -1,5 +1,21 @@
 # MUH · aktueller Stand · 06.10.2026
 
+## Tagesabschluss · 06.10.2026 · maßgebliche Zusammenfassung
+
+**Umgesetzt:** Homepage-Texte aus Martina-Unterlagen überarbeitet; acht Leistungsseiten mit Privat-/Gewerbenavigation, Leistungsicons und Originalfotos umgesetzt. Native Masonry-Galerien mit gleichen Bildabständen und ohne sichtbare Bildunterschriften; Alt-Texte erhalten. Geschäftslokale ist laut dokumentierter Rückmeldung von Greg akzeptiert. Die sieben übrigen Seiten und die abschließende Galeriegestaltung stehen zur Beurteilung offen.
+
+**Späterer lokaler Arbeitsstand:** Marken-/Favicon-Grundlagen sind in `1a4f324` enthalten. Danach wurden Icon-Dateien und Markenvorlagen erneut geändert; BaseLayout ergänzt Social-Metadaten und Icon-/Manifestverweise, ServicePage verwendet seitenspezifische Social-Bilder. Neun PNGs unter `public/social/` und `src/pages/site.webmanifest.ts` sind neu und unversioniert. Diese Ergänzungen sind vorhanden, aber in diesem Abschluss weder technisch neu geprüft noch visuell abgenommen.
+
+**Prüfnachweise:** Der bestehende technische Beleg dokumentiert erfolgreiche Feedback-Prüfung, Astro check, Build, 48/48 Chromium-Fälle und Screenshot-Aufnahme für den früheren Seiten-/Galeriestand. Die damalige Eigenprüfung ist unten mit Ansichten und Grenzen beschrieben. Laufzeitänderungen danach erfordern gemäß WORKFLOW eine neue technische Verifikation und passende Eigenprüfung; der alte Beleg ist keine aktuelle Freigabe des gesamten Arbeitsstands. Im Tagesabschluss wurden Dokumentation, Quelldiff, vorhandene Prüfnachweise und Git-Status gelesen; keine Builds, Browserprüfungen oder Handoff-Freigabe neu ausgeführt.
+
+**Versionskontrolle und Sicherung:** Branch `main`, HEAD `1a4f324` (`seo optimization`). Homepage `f8abca5`, Leistungsseiten `09e4668`, Dokumentation `df31b46`. HEAD und der lokal gespeicherte Remote-Tracking-Stand `origin/main` sind identisch (0 voraus / 0 zurück); GitHub wurde nicht frisch abgefragt. Die früheren Aussagen „kein Push“ beschreiben ihre damaligen Schritte und sind kein aktueller Remote-Nachweis. Elf bereits versionierte Dateien sind geändert, dazu kommen die neun Social-PNGs, das Manifest und diese Abschlussnotiz. Kein Commit oder Push während dieses Abschlusses. Ignorierte Quellen, Archive und Prüfbelege bleiben lokal; ein aktuelles externes Backup wurde nicht nachgewiesen.
+
+**Offen:** Gregs Beurteilung der sieben Seiten/Galerien; aktuelles Angebot und abgeleitete Haus-/Bürotexte bestätigen; echte Kontakte, Kundenstimmen und konkrete Projektleistungen ergänzen. Domain und Unternehmens-/Rechtsangaben bleiben vor einer separat beauftragten Veröffentlichung zu klären. Kleine Originalbilder begrenzen die Detailauflösung. Vollständige neue Safari-/Firefox-Abdeckung fehlt. Noindex bleibt aktiv; Veröffentlichung ist weiterhin nicht beauftragt. Arbeits-/Nacharbeitszeiten wurden nicht gemessen.
+
+**Nächster Einstieg:** Zuerst den uncommitteten Social-/Icon-/Manifeststand prüfen und dessen Nachweise aktualisieren; anschließend Gregs Seitenbeurteilung und konkrete Korrekturen aufnehmen. Vor einem weiteren Commit Änderungen und Prüfung zusammenfassen. Fehlende Kundenfakten und Veröffentlichung bleiben im bestehenden TODO, ohne neue Infrastruktur- oder Bereinigungsarbeiten.
+
+Die folgenden Abschnitte sind detaillierte Nachweise früherer Arbeitsschritte. Für aktuellen Prüf-, Git- und Abnahmestatus gilt die Zusammenfassung oben.
+
 ## Masonry ohne Bildunterschriften · aktueller Auftrag
 
 Alle acht Leistungsseiten zeigen ihre Originalfotos in der vorhandenen nativen Masonry-Galerie: eine Spalte auf Mobil, zwei ab 640px und drei ab 1200px. Horizontaler und vertikaler Abstand verwenden denselben Gutter. Sichtbare Bildunterschriften auch unter den Hauptbildern entfernt; beschreibende Alt-Texte erhalten. Nicht mehr benötigte Caption-Felder und CSS entfernt. Farben, Schrift und Originalproportionen bleiben erhalten. Diese Entscheidung ersetzt die früheren Caption-Vorgaben für die Leistungsseiten.

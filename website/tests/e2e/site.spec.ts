@@ -395,3 +395,45 @@ test('audience submenus work without JavaScript on desktop and mobile', async ({
     await context.close();
   }
 });
+
+test("serves social previews and the complete website icon package", async ({ page, request }) => {
+  for (const route of ['/', ...servicePages.map(service => `/${service.slug}/`)]) {
+    await page.goto(route);
+    const imageUrl = await page.locator('meta[property="og:image"]').getAttribute('content');
+    expect(imageUrl).toBeTruthy();
+    const url = new URL(imageUrl!);
+    expect(['http:', 'https:']).toContain(url.protocol);
+    if (site.url) expect(url.origin).toBe(new URL(site.url).origin);
+    await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute('content', 'summary_large_image');
+    await expect(page.locator('meta[name="twitter:image"]')).toHaveAttribute('content', imageUrl!);
+    await expect(page.locator('meta[property="og:image:alt"]')).toHaveAttribute('content', /\S+/);
+    expect(url.pathname).toBe(route === '/' ? '/social/default.png' : `/social/${route.split('/')[1]}.png`);
+    const image = await request.get(url.pathname);
+    expect(image.ok()).toBe(true);
+    expect(image.headers()['content-type']).toContain('image/png');
+    const size = await page.evaluate(async path => {
+      const image = new Image(); image.src = path; await image.decode();
+      return [image.naturalWidth, image.naturalHeight];
+    }, url.pathname);
+    expect(size).toEqual([1200, 630]);
+  }
+  for (const [selector, href] of [['link[rel="icon"][type="image/svg+xml"]', '/favicon.svg'], ['link[rel="icon"][type="image/x-icon"]', '/favicon.ico'], ['link[rel="apple-touch-icon"]', '/apple-touch-icon.png'], ['link[rel="manifest"]', '/site.webmanifest']]) {
+    await expect(page.locator(selector)).toHaveAttribute('href', href);
+    expect((await request.get(href)).ok()).toBe(true);
+  }
+  const ico = await (await request.get('/favicon.ico')).body();
+  expect([...ico.subarray(0, 6)]).toEqual([0, 0, 1, 0, 3, 0]);
+  const response = await request.get('/site.webmanifest');
+  expect(response.headers()['content-type']).toContain('application/manifest+json');
+  const manifest = await response.json();
+  expect(manifest.name).toBe(site.name);
+  expect(manifest.display).toBe('browser');
+  expect(manifest.icons.map((icon: { purpose: string }) => icon.purpose)).toEqual(['any', 'any', 'maskable']);
+  for (const icon of [...manifest.icons, { src: '/apple-touch-icon.png', sizes: '180x180' }, { src: '/favicon-32.png', sizes: '32x32' }]) {
+    const size = await page.evaluate(async path => {
+      const image = new Image(); image.src = path; await image.decode();
+      return `${image.naturalWidth}x${image.naturalHeight}`;
+    }, icon.src);
+    expect(size).toBe(icon.sizes);
+  }
+});
