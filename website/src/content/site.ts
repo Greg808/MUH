@@ -12,13 +12,13 @@ export const navigation = [
 ];
 export const contact = { email: 'hallo@muh.example.com', phone: '+43 (0)1 000 00 00', isPlaceholder: true };
 export const audiences = [
-  { title: 'Für Ihr Zuhause', image: 'private-home', alt: 'Wohnbereich mit Holzboden, weißen Altbautüren und offener Küche', text: 'Eine Wohnung renovieren, das Haus erneuern oder Bad und Küche verändern: Wir besprechen Ihre Wünsche und stimmen Materialien, Arbeitsschritte und Zeitplan auf Ihr Vorhaben ab.', detail: 'Wohnungen · Häuser · Bäder & Küchen', action: 'Privates Vorhaben besprechen' },
-  { title: 'Für Ihren Betrieb', image: 'business-retail', alt: 'Geschäftsraum mit Produktregalen, Verkaufstheke und runder Deckenbeleuchtung', text: 'Geschäftslokal, Büro oder Hotel: Wir planen die Erneuerung Ihrer Räume mit Blick auf Nutzung, Gestaltung und notwendige Sperrzeiten. Die beteiligten Fachfirmen stimmen wir aufeinander ab.', detail: 'Geschäftslokale · Büros · Hotels', action: 'Gewerbliches Vorhaben besprechen' },
+  { title: 'Für Ihr Zuhause', image: 'private-home', alt: 'Wohnbereich mit Holzboden, weißen Altbautüren und offener Küche', text: 'Nach einem Wohnungskauf, vor der Rückgabe einer Mietwohnung oder für die Erneuerung Ihres Zuhauses: Wir planen die nötigen Arbeiten mit Ihnen – von Wänden und Böden bis zu Bad und Küche.', detail: 'Wohnungen · Häuser · Bäder & Küchen', action: 'Privates Vorhaben besprechen' },
+  { title: 'Für Ihren Betrieb', image: 'business-retail', alt: 'Geschäftsraum mit Produktregalen, Verkaufstheke und runder Deckenbeleuchtung', text: 'Geschäftslokal, Büro oder Hotel: Wir stimmen die Renovierung auf Ihren Betrieb ab. Dabei berücksichtigen wir Sperrzeiten, die Gestaltung Ihres Unternehmens sowie strapazierfähige und leicht zu reinigende Oberflächen.', detail: 'Geschäftslokale · Büros · Hotels', action: 'Gewerbliches Vorhaben besprechen' },
 ];
 export const planning = [
-  { title: 'Das Vorhaben durchdenken', text: 'Sanierungskonzept, Kostenrahmen und Zeitablauf bilden die Grundlage. Planskizzen und notwendige Behördenabstimmungen gehören je nach Projekt dazu.' },
-  { title: 'Die Arbeiten zusammenbringen', text: 'Wir stimmen die beteiligten Fachfirmen ab, koordinieren die einzelnen Schritte und berücksichtigen die Nutzung Ihrer Räume und Ihren Alltag.' },
-  { title: 'Die Umsetzung begleiten', text: 'Baubesprechungen, laufende Abstimmungen und die Dokumentation des Bauablaufs halten die Arbeiten zusammen.' },
+  { title: 'Umfang und Kosten klären', text: 'Wir besprechen, welche Bereiche erneuert werden sollen, und erstellen ein Sanierungskonzept mit Kostenrahmen. Planskizzen und Voransichten machen die geplante Umsetzung nachvollziehbar.' },
+  { title: 'Zeitplan und Fachfirmen abstimmen', text: 'Wir erstellen einen Bauzeitplan und koordinieren die beteiligten Fachfirmen. Notwendige Sperrzeiten und Behördenabstimmungen berücksichtigen wir je nach Vorhaben.' },
+  { title: 'Die Umsetzung begleiten', text: 'Wir stimmen die Arbeiten in Baubesprechungen ab und dokumentieren den Bauablauf. So bleiben die einzelnen Gewerke und die nächsten Schritte im Blick.' },
 ];
 export const projects = [
   { title: 'Ein einladender erster Eindruck.', category: 'Geschäftslokal', image: 'project-retail-evening', alt: 'Geschäftsfront mit beleuchteten Fenstern am Abend', text: 'Einblicke in die Erneuerung eines Geschäftsstandorts – vom Eingang bis zu den Räumen dahinter.' },
@@ -29,8 +29,8 @@ export const testimonials = [
   { quote: 'Bei unserer Wohnung wollten wir vieles erneuern und den ursprünglichen Charakter erhalten. Uns war wichtig, Materialien und die einzelnen Schritte gemeinsam durchzugehen.', role: 'So könnte eine Stimme aus einer Wohnungsrenovierung klingen.' },
 ];
 export const services = [
-  { title: 'Malerei & Oberflächen', text: 'Farbberatung, Oberflächengestaltung sowie Boden- und Wandbeläge – passend zu Nutzung, Material und gewünschter Wirkung.' },
-  { title: 'Bäder, Küchen & Funktionsräume', text: 'Renovierung privater Bäder und Küchen sowie gewerblicher Funktionsräume. Wir stimmen Oberflächen und beteiligte Fachfirmen auf die jeweilige Nutzung ab.' },
-  { title: 'Gebäude & Fassaden', text: 'Erneuerung von Gebäudebereichen und Fassaden, abgestimmt auf den Zustand und das vereinbarte Sanierungskonzept.' },
-  { title: 'Wasser- & Brandschäden', text: 'Vom Sanierungskonzept über Trocknungsarbeiten bis zur Koordination notwendiger Fachfirmen und der Wiederherstellung.' },
+  { title: 'Malerei & Oberflächen', text: 'Wir beraten zu Farben, Oberflächen sowie Boden- und Wandbelägen. Ob Parkett, Designboden, Fliesen oder Stein: Nutzung, Beanspruchung und gewünschte Raumwirkung bestimmen die Auswahl und Ausführung.' },
+  { title: 'Bäder, Küchen & Funktionsräume', text: 'Wir renovieren private Bäder und Küchen sowie gewerbliche Küchen und Funktionsräume. Materialien und Oberflächen stimmen wir auf Feuchtigkeit, Reinigung und tägliche Nutzung ab; notwendige Fachfirmen koordinieren wir.' },
+  { title: 'Gebäude & Fassaden', text: 'Wir planen die Erneuerung von Fassaden und Gebäudebereichen anhand ihres Zustands. Gemeinsam klären wir den Sanierungsumfang und stimmen die einzelnen Arbeiten auf das vereinbarte Konzept ab.' },
+  { title: 'Wasser- & Brandschäden', text: 'Nach Wasser- oder Brandschäden erstellen wir ein Sanierungskonzept und koordinieren die Wiederherstellung. Dazu gehören je nach Schaden Trocknungsarbeiten, die Entfernung beschädigter Gegenstände und die Abstimmung mit Elektrikern, Installateuren oder Tischlern.' },
 ];

@@ -2,6 +2,6 @@
 import { planning } from '@content/site';
 ---
 <section id="planung" class="section-space" aria-labelledby="planung-title"><div class="site-container planning-grid">
-  <div><p class="eyebrow">Von der Idee bis zur Umsetzung</p><h2 id="planung-title" class="planning-title">Sie haben Pläne.<br />Wir kümmern uns um die Umsetzung.</h2><p class="planning-intro">Eine Sanierung bedeutet viele Entscheidungen und unterschiedliche Gewerke. MUH bringt Planung, Abstimmung und handwerkliche Umsetzung zusammen.</p><a class="text-link" href="#kontakt">Sprechen wir über Ihr Vorhaben <span aria-hidden="true">↗</span></a></div>
+  <div><p class="eyebrow">Von der Idee bis zur Umsetzung</p><h2 id="planung-title" class="planning-title">Sie haben Pläne.<br />Wir kümmern uns um die Umsetzung.</h2><p class="planning-intro">Welche Arbeiten sind nötig, in welcher Reihenfolge und mit welchen Fachfirmen? MUH übernimmt die Planung und Koordination – vom Sanierungskonzept bis zur Begleitung der Arbeiten.</p><a class="text-link" href="#kontakt">Sprechen wir über Ihr Vorhaben <span aria-hidden="true">↗</span></a></div>
   <ol class="planning-list">{planning.map((item,index) => <li><span class="step" aria-hidden="true">0{index+1}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></li>)}</ol>
 </div></section>
