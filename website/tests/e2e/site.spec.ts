@@ -1,6 +1,22 @@
 import { expect, test } from "@playwright/test";
 import { site } from "../../src/content/site";
 
+test('header, sections and footer share content edges', async ({ page }) => {
+  for (const width of [320, 390, 639, 640, 768, 899, 900, 1264, 1440, 1920]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/');
+    const containers = await page.locator('.site-container').evaluateAll(nodes => nodes.map(node => {
+      const bounds = node.getBoundingClientRect();
+      return { left: bounds.left, right: bounds.right };
+    }));
+    expect(containers.length).toBeGreaterThanOrEqual(9);
+    for (const bounds of containers) {
+      expect(Math.abs(bounds.left - containers[0].left), `left edge at ${width}px`).toBeLessThanOrEqual(1);
+      expect(Math.abs(bounds.right - containers[0].right), `right edge at ${width}px`).toBeLessThanOrEqual(1);
+    }
+  }
+});
+
 test("renders semantic content and safe metadata", async ({ page }) => {
   await page.goto("/");
   await expect(page).toHaveTitle(/\S/);
