@@ -53,9 +53,12 @@
     "width": 800,
     "height": 533,
     "permission": "Greg confirmed project photos, 2026-09-16",
-    "role": "Authentic photograph; example description explicitly labeled",
-    "status": "archived-unused",
-    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)"
+    "role": "Authentic original photograph; hero for business-premises service page. Archived duplicate retained.",
+    "status": "active",
+    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)",
+    "usedBy": [
+      "/geschaeftslokale/"
+    ]
   },
   {
     "slug": "project-hotel",
@@ -123,5 +126,1097 @@
     "slug": "project-private",
     "source": "Wohnungssanierung3-1.jpg",
     "role": "Authentic supplied residential photo, example description labeled"
+  },
+  {
+    "slug": "retail-front-day",
+    "source": "media-images/2023/05/renovierung5.jpg",
+    "width": 533,
+    "height": 800,
+    "sourceSha256": "99ae4e7b160e7555933e30e4db90a9793c2ac209964758451cff8fae01ce6eef",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original commercial project photo in business-premises gallery",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "retail-front-day-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 55018
+      },
+      {
+        "file": "retail-front-day-800.webp",
+        "width": 533,
+        "height": 800,
+        "bytes": 66740
+      }
+    ],
+    "usedBy": [
+      "/geschaeftslokale/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "retail-counter",
+    "source": "media-images/2023/05/gewerblicherenovierung.jpg",
+    "width": 800,
+    "height": 533,
+    "sourceSha256": "d797e70a069b03d174a6fc8f8c93f91cde420349627ec389be5c135d6ae779b3",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original commercial project photo in business-premises gallery",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "retail-counter-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 28944
+      },
+      {
+        "file": "retail-counter-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 73006
+      }
+    ],
+    "usedBy": [
+      "/geschaeftslokale/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "retail-consultation",
+    "source": "media-images/2023/05/renovierung22.jpg",
+    "width": 800,
+    "height": 533,
+    "sourceSha256": "601726f6299988bb4d91dd89f6147c72f4a9957a1fe141756cf931d2bc444e42",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original commercial project photo in business-premises gallery",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "retail-consultation-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 22722
+      },
+      {
+        "file": "retail-consultation-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 60064
+      }
+    ],
+    "usedBy": [
+      "/geschaeftslokale/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "retail-front-night",
+    "source": "media-images/2023/05/renovierung26.jpg",
+    "width": 533,
+    "height": 800,
+    "sourceSha256": "193220dfee05e039322dd453374502b0c05f5753aa4e8f3bd62e89e38c6e63b6",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original commercial project photo in business-premises gallery",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "retail-front-night-480.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 55062
+      },
+      {
+        "file": "retail-front-night-800.webp",
+        "width": 533,
+        "height": 800,
+        "bytes": 66518
+      }
+    ],
+    "usedBy": [
+      "/geschaeftslokale/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "apartment-room",
+    "source": "media-images/2023/05/Wohnung5.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "5729950475c8e4f213c07b40a476b4f5adf99ec0cfd6769df9de4336e4d2d0aa",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for wohnung service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "apartment-room-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 12404
+      },
+      {
+        "file": "apartment-room-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 25424
+      }
+    ],
+    "usedBy": [
+      "/wohnung/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "apartment-hall",
+    "source": "media-images/2023/05/Wohnung2.jpg",
+    "width": 600,
+    "height": 800,
+    "sourceSha256": "6a8cce75ea9585031f521d194ca6bfe0c157a6112497c26c03640a31550291a0",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for wohnung service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "apartment-hall-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 16624
+      },
+      {
+        "file": "apartment-hall-600.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 23450
+      }
+    ],
+    "usedBy": [
+      "/wohnung/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "apartment-floor",
+    "source": "media-images/2023/05/Wohnung4.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "0a8fc9692013713dea3ec4a330724d850f6fc502360bbb11ee7c4bf0f1fa35af",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for wohnung service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "apartment-floor-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 13608
+      },
+      {
+        "file": "apartment-floor-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 29618
+      }
+    ],
+    "usedBy": [
+      "/wohnung/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "apartment-living",
+    "source": "media-images/2023/05/Wohnungsumbau12.jpg",
+    "width": 800,
+    "height": 384,
+    "sourceSha256": "772602ad63cb154e4f9dedd70362d30aaecf573ea6564b229e8e2912f2b7d3e7",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for wohnung service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "apartment-living-480.webp",
+        "width": 480,
+        "height": 230,
+        "bytes": 5702
+      },
+      {
+        "file": "apartment-living-800.webp",
+        "width": 800,
+        "height": 384,
+        "bytes": 11782
+      }
+    ],
+    "usedBy": [
+      "/wohnung/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "apartment-doors",
+    "source": "media-images/2023/05/Wohnungsumbau13.jpg",
+    "width": 800,
+    "height": 384,
+    "sourceSha256": "9478396d643d8e230a3ab4cc55a4005ef4e44d5a4dd441ff7dc80d1d52d2bc2f",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for wohnung service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "apartment-doors-480.webp",
+        "width": 480,
+        "height": 230,
+        "bytes": 5254
+      },
+      {
+        "file": "apartment-doors-800.webp",
+        "width": 800,
+        "height": 384,
+        "bytes": 13074
+      }
+    ],
+    "usedBy": [
+      "/wohnung/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "house-courtyard",
+    "source": "media-images/2023/05/Hausrenovierung10.jpg",
+    "width": 800,
+    "height": 387,
+    "sourceSha256": "7bdfee455693d27762f8b6fe68768982daf7115e249db1ca7ce4f29ddef670a8",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for haus service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "house-courtyard-480.webp",
+        "width": 480,
+        "height": 232,
+        "bytes": 19940
+      },
+      {
+        "file": "house-courtyard-800.webp",
+        "width": 800,
+        "height": 387,
+        "bytes": 45204
+      }
+    ],
+    "usedBy": [
+      "/haus/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "house-entrance",
+    "source": "media-images/2023/05/Hausrenovierung6.jpg",
+    "width": 800,
+    "height": 384,
+    "sourceSha256": "9640a16f7b79541305a03c0d3d97db150b67ff8e3224a8df5cf2e768a2ea3910",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for haus service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "house-entrance-480.webp",
+        "width": 480,
+        "height": 230,
+        "bytes": 24714
+      },
+      {
+        "file": "house-entrance-800.webp",
+        "width": 800,
+        "height": 384,
+        "bytes": 51574
+      }
+    ],
+    "usedBy": [
+      "/haus/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "house-passage",
+    "source": "media-images/2023/05/Hausrenovierung15.jpg",
+    "width": 800,
+    "height": 1067,
+    "sourceSha256": "6950b63157980234638f62ec5f493d2600ae46a849ba22868001ac79688ecbd7",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for haus service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "house-passage-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 21756
+      },
+      {
+        "file": "house-passage-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 46216
+      }
+    ],
+    "usedBy": [
+      "/haus/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "house-stucco",
+    "source": "media-images/2023/05/Hausrenovierung16.jpg",
+    "width": 800,
+    "height": 1067,
+    "sourceSha256": "ea942e412aba5c833c10feafc932e6ec08cf8a0a0edb7256134608f7b6d4754f",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for haus service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "house-stucco-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 20386
+      },
+      {
+        "file": "house-stucco-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 45576
+      }
+    ],
+    "usedBy": [
+      "/haus/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "house-wall-detail",
+    "source": "media-images/2023/05/Hausrenovierung19.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "0bf1e043071e89ee39c85077ecfdb9292e6fafa85334e942b9104e3afae42ffa",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for haus service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "house-wall-detail-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 11526
+      },
+      {
+        "file": "house-wall-detail-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 23152
+      }
+    ],
+    "usedBy": [
+      "/haus/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "house-door",
+    "source": "media-images/2023/05/Hausrenovierung13.jpg",
+    "width": 387,
+    "height": 800,
+    "sourceSha256": "af09debe6ca64321645cde6b3ddedc6c246e5e5519c6c344871f14dfe18cdb1f",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for haus service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "house-door-387.webp",
+        "width": 387,
+        "height": 800,
+        "bytes": 23756
+      }
+    ],
+    "usedBy": [
+      "/haus/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "bathroom-overview",
+    "source": "media-images/2023/05/Badezimmer-Renovierung9.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "8a8bd25995389532857bc27475ed4e15d3e1cba944550646c266a9fc30875e60",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for badezimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "bathroom-overview-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 13820
+      },
+      {
+        "file": "bathroom-overview-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 27206
+      }
+    ],
+    "usedBy": [
+      "/badezimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "bathroom-shower",
+    "source": "media-images/2023/05/Badezimmer-Renovierung2.jpg",
+    "width": 600,
+    "height": 800,
+    "sourceSha256": "ca71a9d240451e13d95f94b86f445b614c04703dc547fa47e5c4e185692f23a4",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for badezimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "bathroom-shower-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 22314
+      },
+      {
+        "file": "bathroom-shower-600.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 31838
+      }
+    ],
+    "usedBy": [
+      "/badezimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "bathroom-door",
+    "source": "media-images/2023/05/Badezimmer-Renovierung3.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "1aea4eae2bb8edc3730a6f1c828f6ffd6c1d70279faafd3d436cc9062208d4cb",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for badezimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "bathroom-door-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 16542
+      },
+      {
+        "file": "bathroom-door-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 30352
+      }
+    ],
+    "usedBy": [
+      "/badezimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "bathroom-basin",
+    "source": "media-images/2023/05/Badezimmer-Renovierung12.jpg",
+    "width": 600,
+    "height": 800,
+    "sourceSha256": "82da2da597b9951fd328b0881ef753cb21287d1304ceb86d17898cacda461d1c",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for badezimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "bathroom-basin-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 20002
+      },
+      {
+        "file": "bathroom-basin-600.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 26836
+      }
+    ],
+    "usedBy": [
+      "/badezimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "terrace-work",
+    "source": "media-images/2023/05/Terrassen-Renovierung10.jpg",
+    "width": 800,
+    "height": 384,
+    "sourceSha256": "44d9f811c4c0ca72712b4ac1798c61c6083036770884bf21cd610ad350f82696",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for terrasse service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "terrace-work-480.webp",
+        "width": 480,
+        "height": 230,
+        "bytes": 38958
+      },
+      {
+        "file": "terrace-work-800.webp",
+        "width": 800,
+        "height": 384,
+        "bytes": 93200
+      }
+    ],
+    "usedBy": [
+      "/terrasse/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "terrace-deck",
+    "source": "media-images/2023/05/Terrassen-Renovierung8.jpg",
+    "width": 600,
+    "height": 800,
+    "sourceSha256": "996bea220ed20f1a2d38f58f21accd18bb9c6f0a886ec7791498b7e98769baf5",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for terrasse service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "terrace-deck-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 45782
+      },
+      {
+        "file": "terrace-deck-600.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 66124
+      }
+    ],
+    "usedBy": [
+      "/terrasse/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "terrace-screen",
+    "source": "media-images/2023/05/Terrassen-Renovierung4.jpg",
+    "width": 600,
+    "height": 800,
+    "sourceSha256": "8fcd369374d34958e565d998e65e4e028a801bb4e1f9c51ee40adcdaed81fe0f",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for terrasse service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "terrace-screen-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 54364
+      },
+      {
+        "file": "terrace-screen-600.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 81380
+      }
+    ],
+    "usedBy": [
+      "/terrasse/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "terrace-steps",
+    "source": "media-images/2023/05/Terrassen-Renovierung2.jpg",
+    "width": 600,
+    "height": 800,
+    "sourceSha256": "a3fe7ca667f928bf55b61e8ee5168046b4600d36c146505d5bf48832cc49c516",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for terrasse service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "terrace-steps-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 92818
+      },
+      {
+        "file": "terrace-steps-600.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 133938
+      }
+    ],
+    "usedBy": [
+      "/terrasse/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "office-entrance",
+    "source": "media-images/2023/05/Buerorenovierung4.jpg",
+    "width": 2560,
+    "height": 1920,
+    "sourceSha256": "771d27a1e0cdb3ff79e97bcc7f5735f093bde8d779d8b818826584805a7cd6a8",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for buero service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "office-entrance-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 9688
+      },
+      {
+        "file": "office-entrance-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 20402
+      },
+      {
+        "file": "office-entrance-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 39004
+      }
+    ],
+    "usedBy": [
+      "/buero/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "office-glass",
+    "source": "media-images/2023/05/Buerorenovierung6.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "933d2f7380e2e9cc46daed56c45beb14966e15170aed4a3c355db94f6a72e03d",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for buero service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "office-glass-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 14828
+      },
+      {
+        "file": "office-glass-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 31194
+      }
+    ],
+    "usedBy": [
+      "/buero/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "office-corridor",
+    "source": "media-images/2023/05/Buerorenovierung5.jpg",
+    "width": 600,
+    "height": 800,
+    "sourceSha256": "739077b58b4fbb1888f43264636fbb2e978726140824b945e11444e67b6a017b",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for buero service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "office-corridor-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 18342
+      },
+      {
+        "file": "office-corridor-600.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 26508
+      }
+    ],
+    "usedBy": [
+      "/buero/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "office-meeting",
+    "source": "media-images/2023/05/Buerorenovierung12.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "1866afe25cc01f397b15c401790d51ec8d92548353663de1448c91665996256c",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for buero service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "office-meeting-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 16506
+      },
+      {
+        "file": "office-meeting-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 33436
+      }
+    ],
+    "usedBy": [
+      "/buero/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "office-kitchen",
+    "source": "media-images/2023/05/Buerorenovierung14.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "1ce5813806273a1b98134c32487883519bc6533982ace20b34be5970fbe8c972",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for buero service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "office-kitchen-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 12506
+      },
+      {
+        "file": "office-kitchen-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 26254
+      }
+    ],
+    "usedBy": [
+      "/buero/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "office-workroom",
+    "source": "media-images/2023/05/Buerorenovierung7.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "ba33c7f7abea16ecd2c7e3c9e3ae413eadf510eb6287c88baabaa48402232593",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for buero service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "office-workroom-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 13820
+      },
+      {
+        "file": "office-workroom-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 29488
+      }
+    ],
+    "usedBy": [
+      "/buero/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "hotel-room",
+    "source": "media-images/2023/05/Hotelzimmerrenovierung21.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "220694590fc1f36d9f1a0f34f68ad0e3376a5ed273555c8ac810e985c4dac4ef",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for hotelzimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "hotel-room-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 15358
+      },
+      {
+        "file": "hotel-room-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 31268
+      }
+    ],
+    "usedBy": [
+      "/hotelzimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "hotel-bed",
+    "source": "media-images/2023/05/Hotelzimmerrenovierung13.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "fad903f535703d2ce4b1e631bf8c265b7921b28b669aca6a7a5dcbadcf90e1b1",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for hotelzimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "hotel-bed-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 13962
+      },
+      {
+        "file": "hotel-bed-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 28886
+      }
+    ],
+    "usedBy": [
+      "/hotelzimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "hotel-seating",
+    "source": "media-images/2023/05/Hotelzimmerrenovierung8.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "f27f1f43d2c4ebd5a767c4128c9f13edf9f85c08e88f465d336bf036ea634638",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for hotelzimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "hotel-seating-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 17052
+      },
+      {
+        "file": "hotel-seating-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 36028
+      }
+    ],
+    "usedBy": [
+      "/hotelzimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "hotel-passage",
+    "source": "media-images/2023/05/Hotelzimmerrenovierung19.jpg",
+    "width": 602,
+    "height": 800,
+    "sourceSha256": "cbdd0909b8f1183d3eba7afe46cc960dafb5fe2d1d39399f33cc392db5372ba0",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for hotelzimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "hotel-passage-480.webp",
+        "width": 480,
+        "height": 638,
+        "bytes": 18378
+      },
+      {
+        "file": "hotel-passage-602.webp",
+        "width": 602,
+        "height": 800,
+        "bytes": 24822
+      }
+    ],
+    "usedBy": [
+      "/hotelzimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "hotel-bathroom",
+    "source": "media-images/2023/05/Hotelzimmerrenovierung11.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "07fd3f219c618f0c280390adc238f2badb266b1b43642b72ccfdeb57b0eaf161",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for hotelzimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "hotel-bathroom-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 16556
+      },
+      {
+        "file": "hotel-bathroom-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 33106
+      }
+    ],
+    "usedBy": [
+      "/hotelzimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "hotel-shower",
+    "source": "media-images/2023/05/Hotelzimmerrenovierung12.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "957052d2e58dc07579706833a59c584bb30fd9e8a54f6afeb29432fc2d12f7d2",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for hotelzimmer service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "hotel-shower-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 14140
+      },
+      {
+        "file": "hotel-shower-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 28454
+      }
+    ],
+    "usedBy": [
+      "/hotelzimmer/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "commercial-kitchen",
+    "source": "media-images/2023/05/kuechenumbau8.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "700629e2d0974cd3cb9f66534006c90fc881e5b193d20703cc1885a29ee97d3e",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for gastronomiekuechen service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "commercial-kitchen-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 20944
+      },
+      {
+        "file": "commercial-kitchen-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 41616
+      }
+    ],
+    "usedBy": [
+      "/gastronomiekuechen/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "commercial-kitchen-ceiling",
+    "source": "media-images/2023/05/kuechenumbau3.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "10f7676e03bc2172d907fef6c30946c0d797c852a91dff510de048d423712efb",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for gastronomiekuechen service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "commercial-kitchen-ceiling-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 13108
+      },
+      {
+        "file": "commercial-kitchen-ceiling-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 25874
+      }
+    ],
+    "usedBy": [
+      "/gastronomiekuechen/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "commercial-kitchen-wash",
+    "source": "media-images/2023/05/kuechenumbau7.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "551388e5b29aac68675255123930554a194950f6f9235790d4fb8ae3597eaeac",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for gastronomiekuechen service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "commercial-kitchen-wash-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 15550
+      },
+      {
+        "file": "commercial-kitchen-wash-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 32816
+      }
+    ],
+    "usedBy": [
+      "/gastronomiekuechen/"
+    ],
+    "status": "active"
+  },
+  {
+    "slug": "commercial-kitchen-work",
+    "source": "media-images/2023/05/kuechenumbau6.jpg",
+    "width": 800,
+    "height": 600,
+    "sourceSha256": "817eee71ffcee29356d4107ebee0cc0c94242723d329ebe3b153a42d0280e219",
+    "permission": "Greg supplied customer project photos and requested their use, 2026-10-06",
+    "role": "Original photo for gastronomiekuechen service page",
+    "transformation": "EXIF orientation, proportional resize without enlargement and WebP compression; no cropping, retouching or generated pixels",
+    "variants": [
+      {
+        "file": "commercial-kitchen-work-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 19276
+      },
+      {
+        "file": "commercial-kitchen-work-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 37622
+      }
+    ],
+    "usedBy": [
+      "/gastronomiekuechen/"
+    ],
+    "status": "active"
   }
 ]

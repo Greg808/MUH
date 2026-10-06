@@ -82,8 +82,8 @@
       "scope": "project",
       "status": "implemented",
       "destination": "project",
-      "target": "playwright.config.ts; src/components/sections/Projects.astro; tests/e2e/site.spec.ts; docs/HANDOFF.md",
-      "changeEvidence": "Isolierter Preview-Testserver mit --ignore-lock; Bildgrößen an gleiche Spalten angepasst; Inhaltskanten an zehn Breiten geprüft. Drei alte Git-Metadatenordner gelöscht, aktives .git erhalten. Aktuelle Prüfung siehe HANDOFF.md."
+      "target": "playwright.config.ts",
+      "changeEvidence": "Isolierter Preview-Testserver mit --ignore-lock; Bildgrößen an gleiche Spalten angepasst; Inhaltskanten an zehn Breiten geprüft. Drei alte Git-Metadatenordner gelöscht, aktives .git erhalten. Aktuelle Prüfung siehe HANDOFF.md. Weitere betroffene Orte (historischer Nachweis): playwright.config.ts; src/components/sections/Projects.astro; tests/e2e/site.spec.ts; docs/HANDOFF.md."
     },
     {
       "id": "muh-folder-cleanup-2026-10-06",
@@ -94,8 +94,92 @@
       "scope": "project",
       "status": "implemented",
       "destination": "project",
-      "target": "README.md; docs/ASSETS.json; archiv/unused-media-2026-10-06/",
-      "changeEvidence": "20 alte Medien unverändert archiviert, Quellen und Nachweise erhalten. Genau ein aktives Git/README/gitignore im Root, ein aktiver Codeordner website, zentrale Werkzeuge. Ignore-Regeln und gebaute Bildreferenzen geprüft; aktueller Build bestanden."
+      "target": "docs/ASSETS.json",
+      "changeEvidence": "20 alte Medien unverändert archiviert, Quellen und Nachweise erhalten. Genau ein aktives Git/README/gitignore im Root, ein aktiver Codeordner website, zentrale Werkzeuge. Ignore-Regeln und gebaute Bildreferenzen geprüft; aktueller Build bestanden. Weitere betroffene Orte (historischer Nachweis): README.md; docs/ASSETS.json; archiv/unused-media-2026-10-06/."
+    },
+    {
+      "id": "muh-source-copy-2026-10-06",
+      "observation": "Home-Inhalte aus den Unterlagen der Vorgängerin konkretisieren; Farben und Schriften beibehalten.",
+      "cause": "Vorhandene Texte fassten Leistungen und Besucheranlässe zu allgemein zusammen.",
+      "source": "Greg, 06.10.2026; Site_Martina/home/home.txt",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/content/site.ts",
+      "changeEvidence": "Private Renovierungsanlässe, gewerbliche Sperrzeiten/Oberflächen, Kostenrahmen, Planskizzen, Bauzeitplan und konkrete Leistungen integriert. Farben, Schrift, Bilder und Sektionsfolge erhalten. Keine unbelegten Umsatz-/Wertversprechen, Garantien oder neuen Referenzen. Prüfung siehe HANDOFF.md. Weitere betroffene Orte (historischer Nachweis): src/content/site.ts; src/components/sections/Hero.astro; Planning.astro; Services.astro; Contact.astro."
+    },
+    {
+      "id": "muh-business-premises-first-page",
+      "observation": "Unterseiten aus Site_Martina nacheinander umsetzen; nach jeder Seite zur Beurteilung stoppen. Farben und Schriften erhalten.",
+      "cause": "Die ursprüngliche Begrenzung auf die Homepage wurde durch Greg erweitert.",
+      "source": "Greg, 06.10.2026; Antwort: Nach jeder Seite zur Beurteilung stoppen",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/pages/geschaeftslokale.astro",
+      "changeEvidence": "Erste Unterseite Geschäftslokale mit konkreten Quellinhalten, Originalfotos und gemeinsamen Komponenten umgesetzt. 28/28 Browserfälle bestanden; Sichtprüfung dokumentiert. Gregs Abnahme offen; weitere Seiten noch nicht umgesetzt. Historischer Prüfstand; Greg hat Geschäftslokale einschließlich Navigation, Galerie und Icons mit dem Folgeauftrag vom 06.10. akzeptiert. Alle acht Unterseiten werden jetzt durch die gemeinsame ServicePage-Komposition ausgegeben und mit 48/48 Browserfällen geprüft."
+    },
+    {
+      "id": "muh-grouped-navigation",
+      "observation": "Geschäftslokale neben Privat & Gewerbe ist redundant; aus Martinas Seiten eine sinnvolle Navigation ableiten. Struktur Privat/Gewerbe/So arbeiten wir/Projekte freigegeben.",
+      "cause": "Die erste Unterseite wurde an die bisherige Homepage-Sprungnavigation angehängt, ohne die Hierarchie neu zu ordnen.",
+      "source": "Greg, 06.10.2026; passt bitte umsetzen",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/components/SiteHeader.astro",
+      "changeEvidence": "Flache Navigation ersetzt. Native Untermenüs, identische Mobilgruppen, konsistenter Footer und Zielgruppenanker. Weitere Seiten nur nach Umsetzung verlinken. 32/32 Chromium-Fälle und Sichtprüfung; Abnahme des Ergebnisses offen. Historischer Prüfstand; Greg hat Geschäftslokale einschließlich Navigation, Galerie und Icons mit dem Folgeauftrag vom 06.10. akzeptiert. Alle acht Unterseiten werden jetzt durch die gemeinsame ServicePage-Komposition ausgegeben und mit 48/48 Browserfällen geprüft."
+    },
+    {
+      "id": "muh-business-gallery",
+      "observation": "Mehr passende repräsentative Kundenbilder für Geschäftslokale aus media-images auswählen und schön als Masonry oder vergleichbar anordnen.",
+      "cause": "Die erste Fassung zeigte nur zwei Projektaufnahmen und kaum Material-/Raumdetails.",
+      "source": "Greg, 06.10.2026",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/pages/geschaeftslokale.astro",
+      "changeEvidence": "Vier originale Fotos ergänzt; sechs Aufnahmen in nativen CSS-Spalten mit vollständigen Ausschnitten, neutralen Captions und responsiven Quellen. Explizite Seiten-CSS-Einbindung korrigiert. 32/32 Browserfälle einschließlich tatsächlich sichtbarer Spalten und Bild-/Caption-Geometrie; Desktop/Mobil gesichtet. Gregs Abnahme offen. Historischer Prüfstand; Greg hat Geschäftslokale einschließlich Navigation, Galerie und Icons mit dem Folgeauftrag vom 06.10. akzeptiert. Alle acht Unterseiten werden jetzt durch die gemeinsame ServicePage-Komposition ausgegeben und mit 48/48 Browserfällen geprüft."
+    },
+    {
+      "id": "muh-business-work-icons",
+      "observation": "Passende Icons für alle Punkte im Leistungsumfang auf Geschäftslokale ergänzen.",
+      "cause": "Die drei Leistungslisten enthielten ausschließlich Text ohne sichtbare Symbole.",
+      "source": "Greg, Browserkommentar, 06.10.2026",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/pages/geschaeftslokale.astro",
+      "changeEvidence": "Elf lokale Lucide-SVGs mit typisierter Zuordnung, Marken-Grün, Ausrichtung an der ersten Textzeile und erhaltener Listensemantik. Check/Build und 32/32 Browserfälle bestanden; schmale Silbentrennung anschließend gezielt bei 320px/200% geprüft. Desktop, Tablet, Mobil und vergrößerte Ansicht gesichtet. Gregs Abnahme offen. Historischer Prüfstand; Greg hat Geschäftslokale einschließlich Navigation, Galerie und Icons mit dem Folgeauftrag vom 06.10. akzeptiert. Alle acht Unterseiten werden jetzt durch die gemeinsame ServicePage-Komposition ausgegeben und mit 48/48 Browserfällen geprüft."
+    },
+    {
+      "id": "muh-complete-service-pages",
+      "observation": "Geschäftslokale passt; jetzt alle restlichen Seiten aus Site_Martina umsetzen.",
+      "cause": "Sieben freigegebene Themen waren nach der bisherigen Einzelabnahme noch nicht umgesetzt.",
+      "source": "Greg, 06.10.2026: passt mach jetzt bitte die restlichen seiten noch",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/components/ServicePage.astro",
+      "changeEvidence": "Sieben neue Leistungsseiten mit eigenen Quelltexten, 35 ausgewählten Originalfotos, lokalen Icons und gemeinsamer Vorlage. Acht Unterseiten über Privat/Gewerbe sowie Footer erschlossen. Leere Haus-/Büroquellen aus belegten Homepage-Angeboten ergänzt. Check mit 49 Dateien, Build mit neun Routen und 48/48 Chromium-Fälle bestanden; Sichtung und aktuelle Grenzen in HANDOFF.md und REVIEW.json. Abnahme der sieben neuen Seiten steht aus."
+    },
+    {
+      "id": "muh-masonry-without-captions",
+      "observation": "Bilder auf den Leistungsseiten als Masonry zeigen; sichtbare Bildunterschriften entfernen, Alt-Texte reichen.",
+      "cause": "Die gemeinsame Fotokomponente gab unter jedem Bild einen zusätzlichen Text aus; vertikale Galerieabstände waren größer als die horizontalen.",
+      "source": "Greg, 06.10.2026: bitte für die bilder auf den seiten einen masonry grid verwenden und die bild unterschriften weg",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "src/components/ProjectPhoto.astro",
+      "changeEvidence": "Gemeinsame ProjectPhoto-Ausgabe ohne figcaption; vorhandene native 1/2/3-Spalten erhalten, vertikale/horizontale Abstände nutzen denselben Gutter. Beschreibende Alt-Texte unverändert; ungenutzte Caption-Felder und -CSS entfernt. Bestehende Bildgeometrieprüfung an den ausdrücklich geänderten Vertrag angepasst; aktuelle Ergebnisse siehe HANDOFF.md."
     }
   ]
 }

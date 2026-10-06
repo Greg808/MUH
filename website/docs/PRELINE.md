@@ -12,3 +12,12 @@ Reassess these compatibility measures on a separately authorized upgrade; do not
 Inventory: SectionFrame (spacing/tone/header), SectionHeader, ContentBlock,
 SectionLayout (optional arrangements), ItemGrid (list/grid), ButtonLink, SurfaceCard.
 Variants are available choices, not mandatory section layouts. No business content belongs in these primitives.
+
+All service-page work lists reuse eleven original Lucide SVGs, rendered by Astro's
+native SVG imports without an icon runtime or package. Source revision and license
+are retained in src/assets/icons/lucide/; public/licenses/lucide.txt ships the notice.
+Only decorative list icons use this subset; text remains in the typed content module.
+
+ServicePage composes the approved business-premises layout for eight service pages;
+ProjectPhoto shares responsive, uncropped photo output. Each route has its own typed
+content; the same ordered service list supplies Privat/Gewerbe navigation links.

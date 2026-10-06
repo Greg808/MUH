@@ -1,39 +1,76 @@
 {
   "version": 1,
-  "source": "ff342d58ec0f7bc6eee28eb660ff9ff1ecf43f97ddfac25fa3236286393b656f",
-  "build": "ffe1b0948eae3484760a1268347492bbce8fd681f69665342d3424f42ebe3095",
-  "decisions": "e976106d1a6192969cb528a8bd0732e4471adc19371fb5e957f67a11fe680a2a",
+  "source": "4ae1ff0318aeb4e18e32fd692eb7addf7cdcff3c34b651735a11676931428194",
+  "build": "dc5c031fe50f321f0335e1ea652f5a062bfdf33a15ef1d226d6eb46d14c0d8f4",
+  "decisions": "a1feddd8fc0163a10f0e247937630ae84d39ea845f96222f5b7589536d049fb9",
   "reviews": {
     "code": {
-      "reviewer": "Codex – eigene Code-/Bedienungsprüfung",
+      "reviewer": "Codex – eigene Code- und Bedienungsprüfung",
+      "method": "self-review",
+      "authoredBy": "Codex",
       "result": "pass",
-      "observation": "24 Browserfälle sowie Astro check und Build bestanden. Gleichwertige Zielgruppeneinstiege zusätzlich getestet; bestehende Vergleichsfunktionen weiterhin geprüft.",
+      "observation": "Vorhandene native Masonry und gemeinsame Astro-Fotokomponente wiederverwendet. figcaption sowie ungenutzte Caption-Daten/CSS entfernt; Galerieabstände nutzen denselben Gutter. Alt-Texte, responsive Quellen und Geometrieprüfungen erhalten. Check, Build, 48/48 Chromium-Fälle und git diff --check bestanden.",
+      "limitations": "Autor prüft eigenen Code. Keine neue unabhängige Review oder vollständige Safari-/Firefox-Prüfung.",
       "evidence": [
         {
-          "path": ".local-work/review/balanced/observations.md",
-          "sha256": "c0249b1dcd2d7162a671cbb4c75f3586efeeaa1e9b795be76b78c1152eb6a2d3"
+          "path": ".local-work/review/masonry-without-captions-2026-10-06/observations.md",
+          "sha256": "a90f1133940a80ba576360308c4228d442680e0ad3cbf6f669e21758090928de"
+        },
+        {
+          "path": ".local-work/handoff/technical.json",
+          "sha256": "cf169ac8a575f15d94255731d1cdf91c2bf62e5668e64062e9aa4a9044734bfb"
+        },
+        {
+          "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+          "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
         }
       ]
     },
     "content": {
-      "reviewer": "Codex – Quellenabgleich",
+      "reviewer": "Codex – Quellenabgleich und Bildauswahl",
+      "method": "self-review",
+      "authoredBy": "Codex",
       "result": "pass",
-      "observation": "Privat und Gewerbe in allen relevanten Sektionen gleichwertig; je ein Projekt und eine Musterstimme. Zwei originale Wohnungsbilder ergänzt, Muster- und KI-Hinweise erhalten.",
+      "observation": "Gregs aktuelle Entscheidung ersetzt die sichtbaren Captions auf allen acht Leistungsseiten; beschreibende Alt-Texte bleiben erhalten. Originalfotos und vorhandene Seitentexte unverändert. Vorangegangener Martina-/Home-Quellenabgleich und konservative Behandlung leerer Haus-/Büroquellen weiterhin gültig.",
+      "limitations": "Historische Angebote, besonders Haus/Büro, und konkrete MUH-Projektaufgaben brauchen Kundenbestätigung. Vorhandene Kontakt-/Stimmen-/Projektmuster bleiben gekennzeichnet.",
       "evidence": [
         {
-          "path": ".local-work/review/balanced/observations.md",
-          "sha256": "c0249b1dcd2d7162a671cbb4c75f3586efeeaa1e9b795be76b78c1152eb6a2d3"
+          "path": ".local-work/review/masonry-without-captions-2026-10-06/observations.md",
+          "sha256": "a90f1133940a80ba576360308c4228d442680e0ad3cbf6f669e21758090928de"
+        },
+        {
+          "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+          "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+        },
+        {
+          "path": ".local-work/review/remaining-pages-2026-10-06/selection.json",
+          "sha256": "61930ea2ee3d5e94b3e75a5b62d44575d560e569994a5681b60f0c26f9b24e01"
         }
       ]
     },
     "visual": {
       "reviewer": "Codex – tatsächliche visuelle Eigenprüfung",
+      "method": "self-review",
+      "authoredBy": "Codex",
       "result": "pass",
-      "observation": "Gesamtseite bei 390/768/1440/1920px gesichtet; Hero zusätzlich bei 320px und 200% Schrift. Bestehende Gestaltung erhalten; gleich große Zielgruppenkarten ohne Überlagerung.",
+      "observation": "Alle acht aktuellen Galerieabschnitte an fünf Ansichten tatsächlich gesichtet: vollständige Bilder, natürliche Proportionen, 1/2/3-Spalten, gleiche Abstände und keine Untertitel. Wohnung-Hauptbild sowie Live-Galerie auf Desktop/Mobil zusätzlich geprüft. Fünf Homepage-PNGs bytegleich zum zuvor gesichteten Stand; für unveränderte übrige Abschnitte bleibt der frühere Seitenreview gültig.",
+      "limitations": "Visuelle Eigenprüfung der betroffenen Galerie-/Fotokomposition, keine erneute vollständige Sichtung aller unveränderten Abschnitte und keine Abnahme durch Greg. Bestehende geringe Originalauflösung und fehlende vollständige Safari-/Firefox-Abdeckung bleiben.",
       "evidence": [
         {
-          "path": ".local-work/review/balanced/observations.md",
-          "sha256": "c0249b1dcd2d7162a671cbb4c75f3586efeeaa1e9b795be76b78c1152eb6a2d3"
+          "path": ".local-work/review/masonry-without-captions-2026-10-06/observations.md",
+          "sha256": "a90f1133940a80ba576360308c4228d442680e0ad3cbf6f669e21758090928de"
+        },
+        {
+          "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+          "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+        },
+        {
+          "path": ".local-work/review/masonry-without-captions-2026-10-06/desktop.png",
+          "sha256": "daac0703e849692dc727296911474dc21a32d0f7fbc616fe85c159971906b254"
+        },
+        {
+          "path": ".local-work/review/masonry-without-captions-2026-10-06/mobile.png",
+          "sha256": "278f73760bce47effe83e1c959ad6de7ceba0e0ca64ff4cce9c4c28c0e671285"
         }
       ],
       "views": [
@@ -41,50 +78,450 @@
           "route": "/",
           "width": 1440,
           "textScale": 1,
-          "observation": "Gesamtfluss anhand aktueller Screenshotstreifen gesichtet; gleichwertige Zielgruppen, Bildausschnitte und Lesbarkeit geprüft.",
+          "observation": "Aktuelle Ganzseitenaufnahme bytegleich zum zuvor tatsächlich gesichteten Stand; vorherige vollständige Homepage-Beurteilung weiterhin gültig. Kein Homepage-Eingriff in diesem Schritt.",
           "evidence": {
-            "path": ".local-work/review/balanced/full-1440.png",
-            "sha256": "4ed2f44af470f3a9abdc098cdabce708bde91fb63d468bfc9670af865648c8a6"
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/home-desktop.png",
+            "sha256": "3abaf7e9ac276099dfa4c9d49e98d78533b0904b43e3aa67adfb52998fb15b8c"
           }
         },
         {
           "route": "/",
           "width": 390,
           "textScale": 1,
-          "observation": "Gesamtfluss anhand aktueller Screenshotstreifen gesichtet; gleichwertige Zielgruppen, Bildausschnitte und Lesbarkeit geprüft.",
+          "observation": "Aktuelle Ganzseitenaufnahme bytegleich zum zuvor tatsächlich gesichteten Stand; vorherige vollständige Homepage-Beurteilung weiterhin gültig. Kein Homepage-Eingriff in diesem Schritt.",
           "evidence": {
-            "path": ".local-work/review/balanced/full-390.png",
-            "sha256": "bdb5780f1469cbecd9e6681fe7d2802a964bc807095493ab17408593e5de1937"
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/home-mobile.png",
+            "sha256": "7dd50d6fdfc4d3f1649efe34641aabf5774233895cc8469cbf2f91fee1d0a9d0"
           }
         },
         {
           "route": "/",
           "width": 768,
           "textScale": 1,
-          "observation": "Gesamtfluss anhand aktueller Screenshotstreifen gesichtet; gleichwertige Zielgruppen, Bildausschnitte und Lesbarkeit geprüft.",
+          "observation": "Aktuelle Ganzseitenaufnahme bytegleich zum zuvor tatsächlich gesichteten Stand; vorherige vollständige Homepage-Beurteilung weiterhin gültig. Kein Homepage-Eingriff in diesem Schritt.",
           "evidence": {
-            "path": ".local-work/review/balanced/full-768.png",
-            "sha256": "bd5abb3da66cc075765832e7ea7dff02c02e344279245eaea4295931ce6aa42f"
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/home-tablet.png",
+            "sha256": "332a7641af4701c2b1a66ab2fec72c48a9f1f548cb1ff5668bb58207141b6e4b"
           }
         },
         {
           "route": "/",
           "width": 1920,
           "textScale": 1,
-          "observation": "Gesamtfluss anhand aktueller Screenshotstreifen gesichtet; gleichwertige Zielgruppen, Bildausschnitte und Lesbarkeit geprüft.",
+          "observation": "Aktuelle Ganzseitenaufnahme bytegleich zum zuvor tatsächlich gesichteten Stand; vorherige vollständige Homepage-Beurteilung weiterhin gültig. Kein Homepage-Eingriff in diesem Schritt.",
           "evidence": {
-            "path": ".local-work/review/balanced/full-1920.png",
-            "sha256": "d54209157b36fe67787f5088df128459b4516b807654ecc5fd3eb79d286478de"
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/home-wide.png",
+            "sha256": "e4457db66cdc3b85284c5355fcc946999389cd28308ab1f87e51f5584d8566ab"
           }
         },
         {
           "route": "/",
           "width": 320,
           "textScale": 2,
-          "observation": "Hero bei 200% Schrift visuell gesichtet; vollständiger Screenshot und Überlaufprüfung für beide Vergleichsmodi vorhanden.",
+          "observation": "Aktuelle Ganzseitenaufnahme bytegleich zum zuvor tatsächlich gesichteten Stand; vorherige vollständige Homepage-Beurteilung weiterhin gültig. Kein Homepage-Eingriff in diesem Schritt.",
           "evidence": {
-            "path": ".local-work/review/balanced/full-320.png",
-            "sha256": "56b52bdb669da166ced6e3103d95f12a4a9aee26da5405e2208e1ec7095eb2b0"
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/home-narrow-text-200.png",
+            "sha256": "faa53f61cbdb07aa155efdbb4063931206b13da3fc75f2dec88827a4d44f8fa7"
+          }
+        },
+        {
+          "route": "/wohnung/",
+          "width": 1440,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1440px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt. Aktuelles Hauptbild ebenfalls gesichtet, Caption entfernt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/wohnung-desktop.png",
+            "sha256": "9ea4b3ab34905f19c1aa8d3901b4196b84a7d42fc64bda88ca928da1758e31a6"
+          }
+        },
+        {
+          "route": "/wohnung/",
+          "width": 390,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 390px und 100% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/wohnung-mobile.png",
+            "sha256": "fdb98a72a426e91a08d5695bca932d00979e268c233c431c16e2e3880a4269ef"
+          }
+        },
+        {
+          "route": "/wohnung/",
+          "width": 768,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 768px und 100% Schrift tatsächlich gesichtet: 2 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/wohnung-tablet.png",
+            "sha256": "df44dd5dfca7f35f75a1604432e392ac8abf183c1eb483c862c82bd4b360157d"
+          }
+        },
+        {
+          "route": "/wohnung/",
+          "width": 1920,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1920px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/wohnung-wide.png",
+            "sha256": "592c0e9d0f34d50b58f11ad06d6a39fb9cb133c7b784d13b0f580d91fda2cd46"
+          }
+        },
+        {
+          "route": "/wohnung/",
+          "width": 320,
+          "textScale": 2,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 320px und 200% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/wohnung-narrow-text-200.png",
+            "sha256": "1d8de45840907081e51ef72b48d1a485f6770edb6123e946530ce07455852961"
+          }
+        },
+        {
+          "route": "/haus/",
+          "width": 1440,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1440px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/haus-desktop.png",
+            "sha256": "41e70226f257f6018bffe5e974db304c6f2c42489005ed83aea8f74597ae2dd9"
+          }
+        },
+        {
+          "route": "/haus/",
+          "width": 390,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 390px und 100% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/haus-mobile.png",
+            "sha256": "73ea45a8e9033e69aeb64cb3745092081859407eb057b9072c9628c69cfbdfbf"
+          }
+        },
+        {
+          "route": "/haus/",
+          "width": 768,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 768px und 100% Schrift tatsächlich gesichtet: 2 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/haus-tablet.png",
+            "sha256": "9a5af2480a3742450114a8da44ee821457203320cc0bd0e2113600d37411a3a1"
+          }
+        },
+        {
+          "route": "/haus/",
+          "width": 1920,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1920px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/haus-wide.png",
+            "sha256": "5a5b7ee77e08cfd4714a06010d5f871403dd5fe4150680065c91f991c5095200"
+          }
+        },
+        {
+          "route": "/haus/",
+          "width": 320,
+          "textScale": 2,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 320px und 200% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/haus-narrow-text-200.png",
+            "sha256": "d74cba091b55a643e849f8dc6f6da1c14a2b5803c0846b452c25244138c18edf"
+          }
+        },
+        {
+          "route": "/badezimmer/",
+          "width": 1440,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1440px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/badezimmer-desktop.png",
+            "sha256": "99af94258cc06cd7c9322ae064fb2ce74b434bc34cb5360e92c9c45a189a0b9b"
+          }
+        },
+        {
+          "route": "/badezimmer/",
+          "width": 390,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 390px und 100% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/badezimmer-mobile.png",
+            "sha256": "e4e668c83e15ba583fe9a0377ccaeb927aeffa4d31ddca6a2e3b8c3e0474cf12"
+          }
+        },
+        {
+          "route": "/badezimmer/",
+          "width": 768,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 768px und 100% Schrift tatsächlich gesichtet: 2 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/badezimmer-tablet.png",
+            "sha256": "e0bc83b6488fe469b4dc5badca5e342564ae07914bb3a693232f2b61db89d1e2"
+          }
+        },
+        {
+          "route": "/badezimmer/",
+          "width": 1920,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1920px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/badezimmer-wide.png",
+            "sha256": "07290f2792cde3ff6867a300849f0e62c180f411f71d93233dec493b735a2cd9"
+          }
+        },
+        {
+          "route": "/badezimmer/",
+          "width": 320,
+          "textScale": 2,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 320px und 200% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/badezimmer-narrow-text-200.png",
+            "sha256": "03f4b6f8a8ac210f0426ae49c9a5c11e854dbf32af1838ad14d0a435a1594a48"
+          }
+        },
+        {
+          "route": "/terrasse/",
+          "width": 1440,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1440px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/terrasse-desktop.png",
+            "sha256": "b321272eecf9a5f7ecbe52de5d1c144256c2279544ba77369b32e2a4aa072215"
+          }
+        },
+        {
+          "route": "/terrasse/",
+          "width": 390,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 390px und 100% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/terrasse-mobile.png",
+            "sha256": "7ac9996d0afcb698964a8c617da3a68519db39ef5cedf4a8c23cafa18d0de509"
+          }
+        },
+        {
+          "route": "/terrasse/",
+          "width": 768,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 768px und 100% Schrift tatsächlich gesichtet: 2 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/terrasse-tablet.png",
+            "sha256": "fda55f7f9a0830b99f6c4da7fc1b0cb98561bcf0f866448e808b7c4d86c0dadc"
+          }
+        },
+        {
+          "route": "/terrasse/",
+          "width": 1920,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1920px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/terrasse-wide.png",
+            "sha256": "6298796e075da67fceb25f8dd8957504893b2a986f9c823c2487a7233937a85a"
+          }
+        },
+        {
+          "route": "/terrasse/",
+          "width": 320,
+          "textScale": 2,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 320px und 200% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/terrasse-narrow-text-200.png",
+            "sha256": "2ab5bcfbee876db1a4addc62bbdb7a5f84359358cbbd98f633176a170a2a92e8"
+          }
+        },
+        {
+          "route": "/geschaeftslokale/",
+          "width": 1440,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1440px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/geschaeftslokale-desktop.png",
+            "sha256": "41ed37ca73587364d14c210aed29644ac10eb66f0ed714c38dc3298d4dc3b427"
+          }
+        },
+        {
+          "route": "/geschaeftslokale/",
+          "width": 390,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 390px und 100% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/geschaeftslokale-mobile.png",
+            "sha256": "876cc78e218f15f6cc7600cbcf9b3dfbbf8e3980b73b5c5466fe15fcea36b67b"
+          }
+        },
+        {
+          "route": "/geschaeftslokale/",
+          "width": 768,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 768px und 100% Schrift tatsächlich gesichtet: 2 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/geschaeftslokale-tablet.png",
+            "sha256": "ba86789706c036378b683aecd1807d58599c30eea0e4b0ca7a50ac2291a167b5"
+          }
+        },
+        {
+          "route": "/geschaeftslokale/",
+          "width": 1920,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1920px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/geschaeftslokale-wide.png",
+            "sha256": "fd56d6e8f050f8aa33c66ae6664e79d4041f6a81b510b2c89074e7bded8dd6c2"
+          }
+        },
+        {
+          "route": "/geschaeftslokale/",
+          "width": 320,
+          "textScale": 2,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 320px und 200% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/geschaeftslokale-narrow-text-200.png",
+            "sha256": "61ccfed767c85c56e912d675775142a8af95616aabad4bb4555488b3c1c770a0"
+          }
+        },
+        {
+          "route": "/buero/",
+          "width": 1440,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1440px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/buero-desktop.png",
+            "sha256": "71448b106585d8ac9acda0ae92809bbe531a0fb7672b12e3f71988724c767a10"
+          }
+        },
+        {
+          "route": "/buero/",
+          "width": 390,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 390px und 100% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/buero-mobile.png",
+            "sha256": "d94dbd7439818c3e82019aae07ff0b94e48052239f749db22b0bbb4ff6e5151a"
+          }
+        },
+        {
+          "route": "/buero/",
+          "width": 768,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 768px und 100% Schrift tatsächlich gesichtet: 2 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/buero-tablet.png",
+            "sha256": "5820db8209c0e6d13f15fa5d4d26aaa2c76ce738cca9ab119757c6f87e35073d"
+          }
+        },
+        {
+          "route": "/buero/",
+          "width": 1920,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1920px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/buero-wide.png",
+            "sha256": "e8e0cf6153a9a61377e88ebf2be10d4d2d7adf49d8156a4084da5d7cca78fc54"
+          }
+        },
+        {
+          "route": "/buero/",
+          "width": 320,
+          "textScale": 2,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 320px und 200% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/buero-narrow-text-200.png",
+            "sha256": "39b0863e72e03eeef888059db610623a6f61121eba72aa1e5b422665e93d5861"
+          }
+        },
+        {
+          "route": "/hotelzimmer/",
+          "width": 1440,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1440px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/hotelzimmer-desktop.png",
+            "sha256": "25f03c1d1eb72ada66fa1cd6b8c2f5ff1d38a25016778183bb05045a479c82b4"
+          }
+        },
+        {
+          "route": "/hotelzimmer/",
+          "width": 390,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 390px und 100% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/hotelzimmer-mobile.png",
+            "sha256": "acdc6161fbb43ec3ff5bfa438e5badf61c82c6e0a1c74e824a0900f9d2e3f001"
+          }
+        },
+        {
+          "route": "/hotelzimmer/",
+          "width": 768,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 768px und 100% Schrift tatsächlich gesichtet: 2 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/hotelzimmer-tablet.png",
+            "sha256": "8fd032750ea8c5ab85315599ecbedf964f931a3b6a11fcda05bcde1a3e3760a6"
+          }
+        },
+        {
+          "route": "/hotelzimmer/",
+          "width": 1920,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1920px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/hotelzimmer-wide.png",
+            "sha256": "e72eb6bf0107ae629d85bb866191939b272f1627a1bb85bc228f36ce9e2b3e90"
+          }
+        },
+        {
+          "route": "/hotelzimmer/",
+          "width": 320,
+          "textScale": 2,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 320px und 200% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/hotelzimmer-narrow-text-200.png",
+            "sha256": "02ad90cf3e65194c4b19043296efacafe1017c0e00b4d75ac9516999b408de45"
+          }
+        },
+        {
+          "route": "/gastronomiekuechen/",
+          "width": 1440,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1440px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/gastronomiekuechen-desktop.png",
+            "sha256": "ef23db02dccf4c198a74403c7dae8feafa0fc7400de540e995e81dc927fb6990"
+          }
+        },
+        {
+          "route": "/gastronomiekuechen/",
+          "width": 390,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 390px und 100% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/gastronomiekuechen-mobile.png",
+            "sha256": "a1f4cce6b17851f4b3f4c69aa81203b527bb417257518add5cd6528a55ed0760"
+          }
+        },
+        {
+          "route": "/gastronomiekuechen/",
+          "width": 768,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 768px und 100% Schrift tatsächlich gesichtet: 2 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/gastronomiekuechen-tablet.png",
+            "sha256": "6b2aff5000bbc1957a97a817b0cf406e0223022d3d7055b12b89eec8922caf3b"
+          }
+        },
+        {
+          "route": "/gastronomiekuechen/",
+          "width": 1920,
+          "textScale": 1,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 1920px und 100% Schrift tatsächlich gesichtet: 3 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/gastronomiekuechen-wide.png",
+            "sha256": "ab7b38a8e5f25f0c114fe5ffccbcce9b518d9278570922b5c091a671731addb9"
+          }
+        },
+        {
+          "route": "/gastronomiekuechen/",
+          "width": 320,
+          "textScale": 2,
+          "observation": "Aktuellen vollständigen Galerieabschnitt bei 320px und 200% Schrift tatsächlich gesichtet: 1 Spalte(n), gleichmäßige Gutter, natürliche vollständige Bildausschnitte, keine Captions, klarer Abschnittseinstieg/-abschluss. Unveränderte übrige Abschnitte durch vorherigen vollständigen Seitenreview belegt.",
+          "evidence": {
+            "path": ".local-work/reports/screenshots/2026-10-06-1791294505242/gastronomiekuechen-narrow-text-200.png",
+            "sha256": "8894e5b79769205a81844a1a5da0d989b1c55890c9a05938e802f7fb474036b2"
           }
         }
       ]
@@ -94,126 +531,221 @@
     {
       "id": "shared-edges",
       "result": "applied",
-      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+      "reason": "Bestehende site-container/SectionFrame/SectionLayout/ItemGrid genutzt; Header-, Abschnitts-, Bild- und Footer-Kanten an 14 Breiten gemessen und in der Komposition gesichtet."
     },
     {
       "id": "spacing-roles",
       "result": "applied",
-      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+      "reason": "Abschnitts-, Inhalts- und Gutter-Tokens erhalten; alle acht Unterseiten verwenden eine gemeinsame Bild-/Listen-CSS statt voneinander abweichender Kopien."
     },
     {
       "id": "whole-draft",
       "result": "applied",
-      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+      "reason": "Zusammenhängende Seiten- und Medienarbeit abgeschlossen, dann technische und vollständige Sichtprüfung. Weitere Prüfungen nur nach beobachteten Fehlern oder Aufnahmeauslassungen."
     },
     {
       "id": "concrete-copy",
       "result": "applied",
-      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+      "reason": "Sieben eigene Besucherfragen und konkrete, belegte Schritte; leere Haus-/Büroquellen klar dokumentiert und auf Home-Leistungen begrenzt."
     },
     {
       "id": "separate-approval",
       "result": "applied",
-      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+      "reason": "Technische Prüfung, Sichtprüfung des Autors und Gregs Abnahme getrennt. Geschäftslokale akzeptiert; die sieben neuen Seiten warten auf Gregs Beurteilung."
     },
     {
       "id": "full-width-raumwerk",
       "result": "not-applicable",
-      "reason": "Raumwerk-Projektgestaltung ist keine MUH-Vorgabe."
+      "reason": "Projektspezifische Raumwerk-Textbreite gilt nicht für die bereits freigegebene MUH-Komposition; deren bestehende Textmaße bleiben erhalten."
     },
     {
       "id": "office-scene",
       "result": "not-applicable",
-      "reason": "Raumwerk-Projektgestaltung ist keine MUH-Vorgabe."
+      "reason": "Raumwerks illustrative Büroszene und Bewegung sind nicht angefragt. MUH verwendet bereitgestellte echte Büroaufnahmen."
     },
     {
       "id": "onepager-acceptance-tests",
       "result": "applied",
-      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+      "reason": "Individuelle Hauptüberschriften, Kontaktanker und 320px/200%-Belege auf alle acht Leistungsseiten übertragen; Homepage-Regression und echte Menüziele beibehalten."
     },
     {
       "id": "design-responsibility-before-presentation",
       "result": "applied",
-      "reason": "Gemeinsame Achsen, Abstandsrollen, konkreter Inhalt, getrennte Abnahme und Gesamtseitenprüfung angewandt; Schmalansichtfehler vor Übergabe behoben, keine nachgewiesene Zeitersparnis."
+      "reason": "Alle neun Leseflüsse vor Übergabe tatsächlich geprüft. Aufnahmeauslassung diagnostiziert und ausschließlich im Prüfvorgang korrigiert; keine behauptete Zeitersparnis oder automatische Kundenabnahme."
     }
   ],
   "feedback": [
     {
       "id": "muh-commercial-home",
       "result": "resolved",
-      "reason": "Homepage-Umfang und ausdrücklich erlaubte Musterinhalte umgesetzt und geprüft.",
+      "reason": "Historische Gewerbepriorität/Onepager-Begrenzung durch Gregs spätere Gleichwertigkeit und aktuellen Unterseitenauftrag überholt; bestehende Homepage erhalten.",
       "evidence": {
-        "path": ".local-work/review/observations.md",
-        "sha256": "7402232a7df2c4436b84389af488553c9e55c7a9066830f20b49dc063103b902"
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
       }
     },
     {
       "id": "muh-presentation-copy",
       "result": "resolved",
-      "reason": "Homepage-Umfang und ausdrücklich erlaubte Musterinhalte umgesetzt und geprüft.",
+      "reason": "Sichtbar gekennzeichnete Muster-Projektbeschreibungen und Stimmen erhalten und an fünf Ansichten gesichtet; echte Inhalte als späterer Ergänzungsbedarf dokumentiert.",
       "evidence": {
-        "path": ".local-work/review/observations.md",
-        "sha256": "7402232a7df2c4436b84389af488553c9e55c7a9066830f20b49dc063103b902"
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
       }
     },
     {
       "id": "muh-ai-hero",
       "result": "resolved",
-      "reason": "Freigegebene Bilder und Homepage-Vergleich integriert; sichtbare Hinweise, Umschaltung und responsives Layout geprüft.",
+      "reason": "Frühere Eingangs-Herofassung wurde durch den später freigegebenen Empfangs-Hero ersetzt; Herkunft und Vergleich erhalten, keine erneute Bildänderung.",
       "evidence": {
-        "path": ".local-work/review/comparison/observations.md",
-        "sha256": "e9fe85cbc595c57becc5bcd7ab995a7aa4f4f26f329227f40337c4d16002edc5"
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
       }
     },
     {
       "id": "muh-comparison-demo",
       "result": "resolved",
-      "reason": "Freigegebene Bilder und Homepage-Vergleich integriert; sichtbare Hinweise, Umschaltung und responsives Layout geprüft.",
+      "reason": "Gekennzeichneter KI-/Originalvergleich erhalten; Regler, Tastatur, Umschaltung und Ladefehlerverhalten bestehen in der aktuellen Regression.",
       "evidence": {
-        "path": ".local-work/review/comparison/observations.md",
-        "sha256": "e9fe85cbc595c57becc5bcd7ab995a7aa4f4f26f329227f40337c4d16002edc5"
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
       }
     },
     {
       "id": "muh-generated-reception-hero",
       "result": "resolved",
-      "reason": "Neues generiertes Empfangsmotiv mit korrekter Kennzeichnung eingebunden und an fünf Breiten geprüft.",
+      "reason": "Aktuelles generiertes Empfangsmotiv mit sichtbarer KI-Kennzeichnung auf Homepage beibehalten und an allen fünf Ansichten geprüft.",
       "evidence": {
-        "path": ".local-work/review/comparison/observations.md",
-        "sha256": "e9fe85cbc595c57becc5bcd7ab995a7aa4f4f26f329227f40337c4d16002edc5"
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
       }
     },
     {
       "id": "muh-equal-audiences",
       "result": "resolved",
-      "reason": "Aktuelle Vorgabe ersetzt den bisherigen Gewerbeschwerpunkt. Privat und Gewerbe gleichwertig im bestehenden Design integriert und geprüft.",
+      "reason": "Gleichwertige Zielgruppenkarten erhalten; Privat und Gewerbe erschließen jeweils vier fertige Seiten über gemeinsame Navigation und Footer.",
       "evidence": {
-        "path": ".local-work/review/balanced/observations.md",
-        "sha256": "c0249b1dcd2d7162a671cbb4c75f3586efeeaa1e9b795be76b78c1152eb6a2d3"
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+      }
+    },
+    {
+      "id": "muh-maintenance-2026-10-06",
+      "result": "resolved",
+      "reason": "Zuvor committete Bereinigung/Wartung erhalten. Isolierter Preview und Inhaltskanten bestehen auch in der aktuellen 48-Fälle-Prüfung.",
+      "evidence": {
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+      }
+    },
+    {
+      "id": "muh-folder-cleanup-2026-10-06",
+      "result": "resolved",
+      "reason": "Root/website/Archiv-Struktur beibehalten; neue Medien nur im aktiven public-Ordner, Herkunft in ASSETS.json, lokale Forschung/Evidenz ignoriert.",
+      "evidence": {
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+      }
+    },
+    {
+      "id": "muh-source-copy-2026-10-06",
+      "result": "resolved",
+      "reason": "Konkrete Home-Leistungen aus Martina erhalten; Farben/Schrift unverändert. Aktuelle vollständige Homepage visuell gesichtet.",
+      "evidence": {
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+      }
+    },
+    {
+      "id": "muh-business-premises-first-page",
+      "result": "resolved",
+      "reason": "Akzeptierte Seite Geschäftslokale in gemeinsame Vorlage überführt, Inhalte erhalten. Aktueller Auftrag ersetzt den bisherigen Stopp nach jeder Seite.",
+      "evidence": {
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+      }
+    },
+    {
+      "id": "muh-grouped-navigation",
+      "result": "resolved",
+      "reason": "Akzeptierte Hierarchie Privat/Gewerbe/So arbeiten wir/Projekte um alle tatsächlich fertigen Seiten erweitert; aktive Links, native Gruppen und Escape/Fokus bestätigt.",
+      "evidence": {
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+      }
+    },
+    {
+      "id": "muh-business-gallery",
+      "result": "resolved",
+      "reason": "Alle sechs akzeptierten Originalaufnahmen mit nativen 1/2/3-Spalten und natürlichen Proportionen erhalten. Gregs spätere Caption-Entfernung angewendet, gleiche Bildabstände; aktuelle Galerie technisch und visuell geprüft.",
+      "evidence": {
+        "path": ".local-work/review/masonry-without-captions-2026-10-06/observations.md",
+        "sha256": "a90f1133940a80ba576360308c4228d442680e0ad3cbf6f669e21758090928de"
+      }
+    },
+    {
+      "id": "muh-business-work-icons",
+      "result": "resolved",
+      "reason": "Alle elf akzeptierten Lucide-Icons auf Geschäftslokale erhalten; gleiche typisierte, dekorative SVGs für passende Aufgaben der neuen Seiten wiederverwendet.",
+      "evidence": {
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+      }
+    },
+    {
+      "id": "muh-complete-service-pages",
+      "result": "resolved",
+      "reason": "Alle sieben restlichen Seiten mit eigenen Inhalten, 35 Originalfotos, Icons, Galerien und Menüeinträgen umgesetzt und geprüft; Gregs Beurteilung steht aus.",
+      "evidence": {
+        "path": ".local-work/review/remaining-pages-2026-10-06/observations.md",
+        "sha256": "ed049d902bb9ec262fa395a0eabc5578f77e4e72323f044d83324e80479bb654"
+      }
+    },
+    {
+      "id": "muh-masonry-without-captions",
+      "result": "resolved",
+      "reason": "Alle acht Leistungsseiten verwenden die vorhandene native Masonry mit gleichen horizontalen/vertikalen Abständen. Sichtbare Galerie- und Hauptbildunterschriften entfernt, beschreibende Alt-Texte erhalten. An fünf Ansichten tatsächlich gesichtet und mit 48/48 Chromium-Fällen geprüft.",
+      "evidence": {
+        "path": ".local-work/review/masonry-without-captions-2026-10-06/observations.md",
+        "sha256": "a90f1133940a80ba576360308c4228d442680e0ad3cbf6f669e21758090928de"
       }
     }
   ],
   "findings": [
     {
-      "id": "presentation-content",
-      "observation": "Originalstimmen, bestätigte Projektdetails, Kontakte und rechtliche Angaben fehlen.",
+      "id": "historical-offer",
+      "observation": "Martinas Haus-/Bürotexte sind leer; die übrigen Texte beschreiben das frühere Angebot.",
       "severity": "nonblocking",
       "status": "open",
-      "limitation": "Für autorisierte Designpräsentation zulässig; vor Veröffentlichung ersetzen und freigeben."
+      "limitation": "Für den beauftragten lokalen Entwurf konservativ aus belegten Home-Leistungen ergänzt. Aktuelles Angebot, besonders Haus/Büro, beim Kunden bestätigen; keine Spezialleistungen erfunden."
+    },
+    {
+      "id": "presentation-content",
+      "observation": "Konkrete MUH-Aufgaben zu den Fotos, Originalstimmen, echte Kontakte und rechtliche Angaben fehlen weiterhin.",
+      "severity": "nonblocking",
+      "status": "open",
+      "limitation": "Entwurf bleibt sichtbar als Präsentation/Muster gekennzeichnet und noindex. Tatsächliche Projektaufgaben und Kundenfakten ergänzen; Veröffentlichung separat beauftragen."
     },
     {
       "id": "photo-resolution",
-      "observation": "Einige Original-Projektbilder sind nur 800px breit.",
+      "observation": "Einige Originalaufnahmen sind nur 384–800px breit.",
       "severity": "nonblocking",
       "status": "open",
-      "limitation": "Bei 2x begrenzte Bilddetails; höher aufgelöste Originale nachliefern, sofern vorhanden."
+      "limitation": "Originalproportion und Inhalt bleiben unverändert; keine Vergrößerung/Retusche. Höher aufgelöste Originale verwenden, sobald der Kunde sie liefert."
     },
     {
       "id": "ai-image-fidelity",
-      "observation": "KI-Version verändert einzelne Material-/Architekturdetails; Originalmodus hat Restparallaxe.",
+      "observation": "Bestehende gekennzeichnete Homepage-KI-Demo verändert einzelne Material-/Architekturdetails; Originalmodus hat Restparallaxe.",
       "severity": "nonblocking",
       "status": "open",
-      "limitation": "Autorisiert als sichtbar gekennzeichnete Demo; kein unveränderter fotografischer Nachweis."
+      "limitation": "Historisch autorisierte, sichtbar gekennzeichnete Demonstration unverändert; die neuen Unterseiten verwenden ausschließlich ausgewählte Originalfotos."
+    },
+    {
+      "id": "browser-coverage",
+      "observation": "Aktuelle vollständige technische und visuelle Prüfung nutzt Chromium.",
+      "severity": "nonblocking",
+      "status": "open",
+      "limitation": "Keine neue vollständige Safari-/Firefox-Prüfung behauptet. Bei einer später beauftragten Veröffentlichung die Zielbrowser zusätzlich prüfen."
     }
   ]
 }

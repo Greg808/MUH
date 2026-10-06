@@ -2,7 +2,7 @@
 
 Arbeitsstand: 06.10.2026. Einziger aktiver Codeordner: `website/`. Aktuelle Prüfung und offene Punkte: [Übergabe](website/docs/HANDOFF.md).
 
-Ausschließlich die Homepage, ohne Deployment. Erstellt aus Gregs technischem Astro-Starter, Revision 8773fe5. Konzeptfreigabe und Erlaubnis für Beispielinhalte: 16.09.2026. Die Abnahme des umgesetzten Designs steht aus.
+Homepage und schrittweise ergänzte Unterseiten, ohne Deployment. Seit 06.10.2026 ist die Erweiterung anhand von Site_Martina freigegeben. Greg hat Geschäftslokale bestätigt und danach die sieben restlichen Seiten gemeinsam beauftragt. Acht Leistungsunterseiten sind umgesetzt; die sieben neuen Seiten stehen zur Beurteilung bereit. Erstellt aus Gregs technischem Astro-Starter, Revision 8773fe5. Konzeptfreigabe und Erlaubnis für Beispielinhalte: 16.09.2026. Die Abnahme des umgesetzten Designs steht aus.
 
 ## Lokal ansehen
 
@@ -11,7 +11,7 @@ Zuerst `cd website`; native pnpm-Befehle laufen dort. Die unten genannten Anwend
 Node 24.19.x. Die bereits vorhandenen, kompatiblen Abhängigkeiten wurden aus der lokalen Gruppe2000-Arbeitsumgebung kopiert, ohne Paketinstallation oder Versionswechsel.
 
 - `pnpm run dev --host 127.0.0.1 --port 4236` – Entwicklung
-- `pnpm run build` – statische Homepage bauen
+- `pnpm run build` – statische Website bauen
 - `pnpm run preview --port 4235` – gebaute Präsentation ansehen
 Aus dem Root der Website-Presse:
 
@@ -24,7 +24,7 @@ Die ursprünglichen Paketdefinitionen und das Lockfile des Starters bleiben erha
 
 ## Inhalte ersetzen
 
-`src/content/site.ts` enthält Einsatzbereiche, Planungsleistungen, Projektbeschreibungen, Musterstimmen und Dummy-Kontakte. Texte der section introductions liegen in den jeweils kleinen `src/components/sections/*.astro`.
+`src/content/service-pages.ts` führt die acht Leistungsseiten und ihre Menüzuordnung zusammen; die jeweiligen Texte liegen in eigenen typisierten Inhaltsdateien. `src/content/site.ts` enthält Einsatzbereiche, Planungsleistungen, Projektbeschreibungen, Musterstimmen und Dummy-Kontakte. Texte der section introductions liegen in den jeweils kleinen `src/components/sections/*.astro`.
 
 - Zwei Stimmen sind ausdrücklich frei formulierte Muster ohne echte Absender.
 - Drei Projektbeschreibungen sind Beispiele; Projektfotos sind laut Greg echte freigegebene Arbeiten.
@@ -67,7 +67,7 @@ Standard ist pnpm 11.19.0, festgelegt in `website/package.json`. `website/pnpm-l
 
 | Ort | Zweck | Git |
 | --- | --- | --- |
-| `website/` | Aktuelle Homepage, Konfiguration, Tests und Projektdokumentation | Quellen versioniert |
+| `website/` | Aktuelle Website, Konfiguration, Tests und Projektdokumentation | Quellen versioniert |
 | `quellen/` | Originalmaterial, Bildauswahl und lokale Studien | Ignoriert |
 | `archiv/` | Nicht mehr aktive Dateien | Ignoriert |
 | `website/.local-work/` | Prüfnachweise und gesicherte frühere Werkzeuge/npm-Installation | Ignoriert |

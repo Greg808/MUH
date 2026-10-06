@@ -1,4 +1,75 @@
-# MUH · aktueller Wartungsstand · 06.10.2026
+# MUH · aktueller Stand · 06.10.2026
+
+## Masonry ohne Bildunterschriften · aktueller Auftrag
+
+Alle acht Leistungsseiten zeigen ihre Originalfotos in der vorhandenen nativen Masonry-Galerie: eine Spalte auf Mobil, zwei ab 640px und drei ab 1200px. Horizontaler und vertikaler Abstand verwenden denselben Gutter. Sichtbare Bildunterschriften auch unter den Hauptbildern entfernt; beschreibende Alt-Texte erhalten. Nicht mehr benötigte Caption-Felder und CSS entfernt. Farben, Schrift und Originalproportionen bleiben erhalten. Diese Entscheidung ersetzt die früheren Caption-Vorgaben für die Leistungsseiten.
+
+Aktueller technischer Lauf: Check, Build, 48/48 Chromium-Fälle und Screenshot-Aufnahme bestanden. Tatsächlich gesichtet: alle acht Galerien bei 390/768/1440/1920px und 320px mit 200% Schrift; zusätzlich Wohnung-Hauptbild und Live-Galerie bei 1261/390px. Vollständige Bilder, gleiche Abstände und keine Untertitel. Die fünf Homepage-Aufnahmen sind bytegleich zum zuvor gesichteten Stand. Unveränderte übrige Abschnitte bleiben durch die vorangegangene Seitenprüfung belegt; keine neue vollständige Sichtung dieser Abschnitte behauptet. Temporären Browser-Viewport zurückgesetzt. Aktuelle Beobachtungen und Vorschau: `.local-work/review/masonry-without-captions-2026-10-06/observations.md` und `desktop.png`; REVIEW.json bindet den aktuellen Prüfstand.
+
+Änderungen lokal committed: Homepage-Texte in `f8abca5`, Leistungsseiten einschließlich Navigation, Galerie, Bildern und Tests in `09e4668`; der zugehörige Dokumentationscommit enthält diesen aktualisierten Stand. Keine Veröffentlichung, kein Push oder externes Backup. Vorschau auf Port 4236. Nächster Schritt: Gregs Beurteilung der Galerie und der sieben zuletzt umgesetzten Seiten. Die unten dokumentierten offenen Kundenfakten und Browsergrenzen bestehen weiter.
+
+## Acht Leistungsseiten · aktueller Stand
+
+Greg hat Geschäftslokale mit „passt“ akzeptiert und alle übrigen Seiten zusammen beauftragt; die frühere Einzelabnahme ist für diesen Schritt überholt. Wohnung, Haus, Badezimmer, Terrasse, Büro, Hotelzimmer und Gastronomieküchen sind umgesetzt und über Privat/Gewerbe auf Desktop, Mobil und im Footer erreichbar. Eigenständige Texte aus Site_Martina und home.txt; die leeren Haus-/Bürodateien aus den belegten allgemeinen Leistungen ergänzt. Die freigegebene Geschäftslokale-Komposition wird mit gemeinsamen Astro-Komponenten und typisierten Inhalten wiederverwendet. Farben, lokale Schrift, Spalten-/Abstandsrollen, Kontakt und Homepage-Gestaltung erhalten. Keine neue Bibliothek oder Interaktion.
+
+35 passende Originalfotos für die sieben neuen Seiten ausgewählt, 70 responsive WebP-Dateien mit tatsächlich zutreffenden Größen exportiert. Originale unverändert; keine Vergrößerung, Retusche, neuen KI-/Stockbilder oder erfundenen Projektleistungen. Natürliche Bildproportionen, beschreibende Alt-Texte, lokale Leistungsicons und native Masonry-Spalten auf allen acht Unterseiten. Quellen, SHA-256 und Transformationen in ASSETS.json.
+
+Technische Prüfung: Astro check mit 49 Dateien ohne Fehler/Warnungen/Hinweise, Build mit neun Routen, 48/48 Chromium-Fälle bestanden; keine übersprungenen, fehlgeschlagenen oder instabilen Fälle. Die Unterseitenprüfung erfasst Navigation, Bilder, Kontaktanker, Inhaltskanten und tatsächliche Galeriespalten an 14 Breiten von 320–1920px samt Breakpoint-Nachbarn; 320px mit 200% Schrift zusätzlich. Ganzseitenbelege für alle neun Routen an fünf Ansichten. Bei der Sichtung fiel eine Chromium-Aufnahmeauslassung bereits geladener Bilder in CSS-Spalten auf; die Aufnahme verwendet jetzt einen vollständig sichtbaren Seitenbereich im isolierten Testkontext. Vorschau und Anwendung bleiben dabei unverändert. Aktuelle technische Quittung und Sichtungsnachweise: .local-work/handoff/technical.json und .local-work/review/remaining-pages-2026-10-06/. Maßgebliche Eigenprüfung in REVIEW.json; die sieben neuen Seiten sind noch nicht von Greg akzeptiert.
+
+Vorangegangene visuelle Eigenprüfung der Seitenumsetzung: alle neun Routen vollständig auf Desktop (1440px), Mobil (390px) und in schmalen Ansichten mit 200% Schrift (320px) über lesbare Bildstreifen gesichtet; Tablet (768px) und breiter Desktop (1920px) als Gesamtkomposition geprüft. Live-Vorschau mit Hotelzimmer und geöffnetem Gewerbemenü zusätzlich geprüft, Escape/Fokus bestätigt. Beobachtungen in `.local-work/review/remaining-pages-2026-10-06/observations.md`; damaliger Screenshot `final-hotel-navigation.png`. Die aktuelle Galerieprüfung ersetzt deren Caption-/Galeriebeurteilung. Eigenprüfung durch den Autor, keine unabhängige Review oder Kundenabnahme.
+
+Offen: Aktuelles Leistungsangebot bestätigen, besonders Haus/Büro mit leeren Einzelvorlagen; konkrete MUH-Aufgaben zu den Fotos fehlen. Einige Originale sind nur 384–800px breit und bleiben entsprechend begrenzt. Bestehende Kontakt-/Stimmen-/Projektmuster und noindex bleiben erhalten. Neue vollständige Safari-/Firefox-Abdeckung fehlt. Keine Veröffentlichung beauftragt. Nächster Schritt ist Gregs Beurteilung der sieben neuen Seiten und Ergänzung der fehlenden Kundenfakten.
+
+Versionskontrolle: Greg hat die Commit-Erstellung beauftragt. Homepage-Texte sind in `f8abca5`, alle acht Leistungsseiten mit Home-/Navigations-/Galerie-/Iconintegration und Tests in `09e4668` festgehalten. Diese Dokumentation wird in einem eigenen Commit versioniert; bisherige Wartungs-/Bereinigungscommits `b1f231f` und `51af020` bleiben erhalten. Lokale Prüfnachweise bleiben ignoriert, kein Push oder externes Backup. Dev-Server bleibt auf http://127.0.0.1:4236/ verfügbar. Originalquellen und aktives Git erhalten.
+
+---
+
+## Frühere Arbeitsschritte · durch den aktuellen Stand ersetzt
+
+### Leistungsicons · vorheriger Arbeitsschritt
+
+Gregs Browserkommentar: passende Icons für alle Punkte im Leistungsumfang. Alle elf Listeneinträge auf Geschäftslokale mit je einem fachlich passenden Lucide-SVG ergänzt. Typisierte Zuordnung im Inhalt, native Astro-SVG-Ausgabe; dekorative Icons für Assistenztechnik verborgen, Listensemantik erhalten. Einheitlich neben der ersten Textzeile, bestehendes Marken-Grün und Schrift. Natürliche Textumbrüche; auf sehr schmalen Ansichten dieselbe automatische Silbentrennung wie bei den übrigen Texten. Kein Laufzeit-JavaScript oder neues Paket. Original-SVGs, Quellrevision und Lizenz lokal erhalten; Lizenz auch im Build ausgeliefert.
+
+Astro check (30 Dateien) und Build erfolgreich; 32/32 vorhandene Browserfälle bestanden. Nach der kleinen Ergänzung der schmalen Silbentrennung Build und gezielte 320px/200%-Prüfung bestanden. Desktop (1261px), Tablet (768px), Mobil (390px, alle drei Gruppen) und breiter Desktop (1920px) tatsächlich gesichtet; 320px/200%-Screenshot des längsten Leistungsblocks gesichtet. Viewport zurückgesetzt. Nachweise: `.local-work/review/business-icons-2026-10-06/desktop-icons.png` und `narrow-200.png`. Keine neue Safari-/Firefox-Prüfung oder Abnahme durch Greg. Änderungen lokal und noch nicht committet. Geschäftslokale bleibt zur Beurteilung offen; keine nächste Unterseite begonnen.
+
+## Projektgalerie · vorheriger Arbeitsschritt
+
+Greg beauftragt weitere repräsentative Originalfotos aus media-images und eine Masonry-Galerie oder vergleichbare Anordnung für Geschäftslokale. 25 allgemeine/gewerbliche Kandidaten und 14 fertige Büroaufnahmen gesichtet; Auswahl auf Verkaufs- und Beratungsräume sowie deren Geschäftsfront beschränkt. Büro-Flur nicht eingebaut. Vier Originale ergänzt: renovierung5.jpg, gewerblicherenovierung.jpg, renovierung22.jpg, renovierung26.jpg. Zusammen mit den zwei vorhandenen Fotos sechs Aufnahmen. Kein Stockmaterial oder generiertes Bild. Originale auf Quellplatte unverändert.
+
+Galerie mit nativen CSS-Spalten: eine unter 640px, zwei ab 640px, drei ab 1200px; Bild und Caption bleiben ungeteilt. Natürliche Bildproportionen, bestehende Radien und Abstände erhalten. Responsive WebP-Varianten über bereits installiertes sharp erstellt, ohne Vergrößerung, Beschnitt oder Retusche. Kleinere Originale (533px breite Hochformate) mit korrekten srcset-Deskriptoren; Herkunft, SHA-256 und Exportgrößen in ASSETS.json. Tatsächliche Galeriegröße statt früherer Zweispalten-Größenangabe. Keine neue Bibliothek oder Galerie-JavaScript.
+
+Bei Sichtprüfung kamen die neuen Scoped-CSS-Regeln der Route nicht in der Vorschau an; im damaligen Build fehlten die Seitenregeln ebenfalls. Seiten-CSS jetzt als business-premises.css ausdrücklich importiert und durch die Seitenklasse begrenzt; bisherigen Style-Block entfernt. Die technische Prüfung kontrolliert jetzt auch tatsächliche Bildspalten, ungeteilte Figures und Originalproportionen, sodass eine versehentlich einspaltige Galerie nicht mehr als Erfolg zählt.
+
+Prüfung: Astro check ohne Fehler/Warnungen/Hinweise, Build mit zwei Routen und 32/32 Chromium-Browserfälle bestanden. Spalten, Bildladung und Bild-/Caption-Geometrie bei zwölf Breiten von 320–1920px geprüft, einschließlich 639/640 und 1199/1200. Alle sechs Bilder im Seitenkontext auf Desktop und während mobilen Leseflusses tatsächlich gesichtet; Zweispaltenansicht 640px und Dreispaltenansicht 1200px gesichtet. Viewport zurückgesetzt. Nachweis: `.local-work/review/business-gallery-2026-10-06/desktop-gallery.png`; Vorauswahl/Quellprüfung im selben Ordner. Keine neue Safari-/Firefox-Prüfung oder Abnahme durch Greg. Teilweise nur 533–800px breite Originale begrenzen die Detailauflösung auf großen/hochauflösenden Displays.
+
+Änderungen lokal, noch nicht committet. Konkrete Projektleistungen weiterhin offen; neutraler Bildtext bleibt erhalten. Keine weiteren Unterseiten, Veröffentlichung oder externes Backup in diesem Schritt.
+
+## Navigation · vorheriger Arbeitsschritt
+
+Greg hat die Gliederung anhand von Site_Martina freigegeben: Privat (Wohnung, Haus, Badezimmer, Terrasse), Gewerbe (Geschäftslokale, Büro, Hotelzimmer, Gastronomieküchen), So arbeiten wir und Projekte. Die zuvor ergänzte flache Mischung aus Startseite/Geschäftslokale/Privat & Gewerbe/Leistungen ist verworfen und ersetzt.
+
+Umgesetzt: zwei native Details-Untermenüs auf Desktop, dieselben Gruppen im vorhandenen mobilen Details-Menü, konsistente Gruppen im Footer. Das Logo führt zur Startseite. Beide Gruppen enthalten ihre vorhandene Homepage-Übersicht; nur Geschäftslokale ist bislang als fertige Unterseite verlinkt. Keine ungebauten oder deaktivierten Seitenziele. Eigene Sprungziele #privat/#gewerbe an den bestehenden Zielgruppenbereichen; sonstige Homepage-Komposition erhalten. Aktive Unterseite und zugehörige Gruppe sichtbar markiert. Menüinhalt einmal im typisierten Inhaltsmodul; identische Desktop-/Mobil-Ausgabe über NavigationItems. Native Öffnung und Gruppenausschluss ohne Laufzeitbibliothek; vorhandene JS-Ergänzung schließt mit Escape (Fokus zurück), nach Linkwahl und bei Klick außerhalb.
+
+Prüfung: Astro check mit 29 Dateien ohne Fehler/Warnungen/Hinweise, Build mit zwei Routen, 32/32 Chromium-Browserfälle bestanden. Geschlossene/geöffnete Gruppen, Tastatur/Fokus, Escape in beiden Ebenen, Klick außerhalb, Linkziele, no-JS und Untermenükanten bei 320/390/768/899/900/1199/1200/1440/1920 geprüft. Desktop und Mobilmenü/Footernavigation tatsächlich gesichtet, Menü-Übergang 768/900 sowie breite Ansichten und 320px/200%-Schrift gesichtet. Temporärer Viewport zurückgesetzt. Sichtung ist keine Abnahme durch Greg; Safari/Firefox nicht neu geprüft. Nachweise: `.local-work/review/business-premises-2026-10-06/grouped-navigation.png`, `grouped-mobile.png`; vergrößerte Ansicht im Test-Ausgabeordner.
+
+Änderungen lokal und noch nicht committet. Keine weiteren Unterseiten umgesetzt; Stopp zur Beurteilung bleibt bestehen. Nächster Schritt: Gregs Beurteilung von Geschäftslokale, danach nächste Unterseite mit ihrem Link in Gewerbe.
+
+## Erste Unterseite · Geschäftslokale · aktueller Arbeitsschritt
+
+Route `/geschaeftslokale/` anhand von Site_Martina/Geschäftslokale umgesetzt: Einstieg mit Originalfoto, Anforderungen des Betriebs, konkreter Leistungsumfang, zwei Original-Projektaufnahmen und vorhandener Kontaktabschnitt. Farben, Schriften und gemeinsame Layout-Komponenten beibehalten. Header-Verweise führen von Unterseiten zur passenden Homepage-Sektion; Footer erschließt die erste Unterseite. Zwei archivierte responsive Fassadenbilder wieder aktiviert; Archivkopien bleiben erhalten. Keine neuen Abhängigkeiten oder Interaktionsbausteine.
+
+Gregs Vorgabe: nach jeder Seite zur Beurteilung stoppen. Geschäftslokale ist implementiert, noch nicht von Greg abgenommen. Weitere Seiten wurden nicht umgesetzt. Nächster Schritt nach Rückmeldung: Geschäftslokale korrigieren oder Hotelzimmer beginnen. Echte Kontakte und bestätigte Projektleistungen fehlen; noindex und Musterhinweise bleiben erhalten. Das historische Leistungsangebot muss vor Veröffentlichung bestätigt werden.
+
+Prüfung: Astro check (28 Dateien) ohne Fehler/Warnungen/Hinweise; Build mit zwei Routen erfolgreich; 28/28 Chromium-Browserfälle bestanden. Navigation, Bildladen, Inhaltskanten/Overflow an zehn Breiten (320–1920px), 320px mit 200% Schrift und mobiles Menü/Escape geprüft. Desktop (1440px), Tablet (768px) und Mobil (390px) tatsächlich gesichtet; zusätzlich 320px/200%-Screenshot des Anforderungsabschnitts angesehen. Keine vollständige Safari-/Firefox-Prüfung und keine Designabnahme durch Greg. Temporärer Browser-Viewport zurückgesetzt; Dev-Server auf Port 4236 bleibt verfügbar. Screenshot: `.local-work/review/business-premises-2026-10-06/desktop.png`.
+
+Homepage-Inhalte und erste Unterseite sind lokale, noch nicht committete Änderungen. Letzte tatsächliche Commits: b1f231f und 51af020. Kein Push oder Deployment.
+
+## Inhaltsüberarbeitung · vorheriger Arbeitsschritt
+
+Hero-Einleitung, Privat-/Gewerbeansprache, Planung, Leistungsgruppen und Kontakt überarbeitet. Quelle: Site_Martina/home/home.txt (Originalunterlagen der Vorgängerin). Konkrete Tätigkeiten und Anlässe übernommen, Wiederholungen und unbelegte Qualitäts-/Umsatz-/Wertversprechen ausgeschlossen. Die Quelle beschreibt das frühere Angebot; aktuelle Gültigkeit der Einzelleistungen vor Veröffentlichung bestätigen. Farben, Schriften, Abschnittsfolge, Bilder und Musterkennzeichnungen erhalten.
+
+Astro check ohne Fehler/Warnungen/Hinweise; aktueller Build und 26/26 Chromium-Browsertests bestanden. Planung/Leistungen auf Desktop (1440px), Zielgruppen/Planung/Leistungen/Kontakt auf Mobil (390px) tatsächlich gesichtet; keine neue vollständige Whole-site-Abnahme. Temporäre Viewport-Einstellung zurückgesetzt; Dev-Server auf Port 4236 erhalten. Änderungen dieses Schritts lokal, noch nicht committet; Wartung/Bereinigung bereits in b1f231f und 51af020 committed.
+
 
 Maßgeblich ist dieser Einstieg. Der folgende Stand vom 16.09. dokumentiert die historische Entwurfsarbeit und damalige Prüfungen, keinen aktuellen vollständigen Designreview.
 
