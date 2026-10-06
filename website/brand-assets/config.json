@@ -1,0 +1,70 @@
+{
+  "icon": "icon.svg",
+  "template": "social.html",
+  "background": "#ffffff",
+  "cards": [
+    {
+      "file": "default.png",
+      "eyebrow": "Privat & Gewerbe · Wien",
+      "title": "Renovierung und Sanierung.",
+      "description": "Von der Planung bis zur Umsetzung.",
+      "image": "../public/images/apartment-living-800.webp"
+    },
+    {
+      "file": "wohnung.png",
+      "eyebrow": "Malerei & Handwerk · Wien",
+      "title": "Wohnung renovieren in Wien",
+      "description": "Planung, Abstimmung und Umsetzung mit MUH.",
+      "image": "../public/images/apartment-room-800.webp"
+    },
+    {
+      "file": "haus.png",
+      "eyebrow": "Malerei & Handwerk · Wien",
+      "title": "Haus und Gebäude renovieren in Wien",
+      "description": "Planung, Abstimmung und Umsetzung mit MUH.",
+      "image": "../public/images/house-courtyard-800.webp"
+    },
+    {
+      "file": "badezimmer.png",
+      "eyebrow": "Malerei & Handwerk · Wien",
+      "title": "Badezimmer renovieren in Wien",
+      "description": "Planung, Abstimmung und Umsetzung mit MUH.",
+      "image": "../public/images/bathroom-overview-800.webp"
+    },
+    {
+      "file": "terrasse.png",
+      "eyebrow": "Malerei & Handwerk · Wien",
+      "title": "Terrasse renovieren in Wien",
+      "description": "Planung, Abstimmung und Umsetzung mit MUH.",
+      "image": "../public/images/terrace-work-800.webp"
+    },
+    {
+      "file": "geschaeftslokale.png",
+      "eyebrow": "Malerei & Handwerk · Wien",
+      "title": "Geschäftslokale renovieren in Wien",
+      "description": "Planung, Abstimmung und Umsetzung mit MUH.",
+      "image": "../public/images/project-retail-800.webp"
+    },
+    {
+      "file": "buero.png",
+      "eyebrow": "Malerei & Handwerk · Wien",
+      "title": "Büro renovieren in Wien",
+      "description": "Planung, Abstimmung und Umsetzung mit MUH.",
+      "image": "../public/images/office-entrance-1200.webp"
+    },
+    {
+      "file": "hotelzimmer.png",
+      "eyebrow": "Malerei & Handwerk · Wien",
+      "title": "Hotelzimmer renovieren in Wien",
+      "description": "Planung, Abstimmung und Umsetzung mit MUH.",
+      "image": "../public/images/hotel-room-800.webp"
+    },
+    {
+      "file": "gastronomiekuechen.png",
+      "eyebrow": "Malerei & Handwerk · Wien",
+      "title": "Gastronomieküchen renovieren in Wien",
+      "description": "Planung, Abstimmung und Umsetzung mit MUH.",
+      "image": "../public/images/commercial-kitchen-800.webp"
+    }
+  ]
+}
