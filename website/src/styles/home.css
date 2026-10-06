@@ -11,11 +11,24 @@ figure, blockquote { margin: 0; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .brand { display: block; flex-shrink: 0; width: 230px; }
 .brand img { display: block; width: 100%; }
-.desktop-nav { display: flex; gap: 28px; font-size: .83rem; font-weight: 600; }
-.desktop-nav a { text-decoration: none; padding-block: 12px; }
+.desktop-nav { display: flex; align-items: center; gap: 28px; font-size: .83rem; font-weight: 600; }
+.desktop-nav a { white-space: nowrap; text-decoration: none; padding-block: 12px; }
 .desktop-nav a:hover, .text-link:hover { color: var(--color-brand-accent); text-decoration: underline; }
 .header-cta { font-size: .82rem; }
 .mobile-menu { display: none; }
+.nav-group { position: relative; min-width: 0; }
+.nav-group > summary { display: flex; align-items: center; gap: 8px; min-height: 44px; padding-block: 12px; list-style: none; cursor: pointer; }
+.nav-group > summary::-webkit-details-marker { display: none; }
+.nav-group > summary:hover, .nav-group > summary.is-current { color: var(--color-brand-accent); }
+.nav-group > summary.is-current { text-decoration: underline; text-underline-offset: 5px; }
+.nav-chevron { line-height: 1; }
+.nav-group[open] > summary .nav-chevron { transform: rotate(180deg); }
+.nav-submenu { margin: 0; padding: 8px 16px; list-style: none; }
+.desktop-nav .nav-submenu { position: absolute; top: 100%; left: -16px; z-index: 10; min-width: 240px; background: white; border: 1px solid var(--color-brand-line); border-radius: 6px; box-shadow: 0 8px 20px rgb(0 0 0 / .06); }
+.desktop-nav .nav-submenu a { display: block; }
+.footer-nav { display: flex; flex-wrap: wrap; gap: 32px 48px; margin-top: 32px; font-size: .85rem; }
+.footer-nav div { display: grid; align-content: start; gap: 12px; }
+.footer-nav strong { font-weight: 600; color: white; }
 .hero { padding-block: 64px 72px; }
 .hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 56px; align-items: center; }
 .hero-copy { padding-block: 14px; }
@@ -91,12 +104,15 @@ a.contact-method:hover .value { text-decoration: underline; }
   .header-inner { flex-wrap: wrap; gap: 12px; }
   .brand { width: 205px; }
   .mobile-menu { display: block; margin-left: auto; }
-  .mobile-menu summary { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--color-brand-line); border-radius: 6px; cursor: pointer; list-style: none; font-size: .86rem; }
+  .mobile-menu > summary { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--color-brand-line); border-radius: 6px; cursor: pointer; list-style: none; font-size: .86rem; }
   .mobile-menu summary::-webkit-details-marker { display: none; }
   .mobile-menu[open] { flex-basis: 100%; }
-  .mobile-menu[open] summary { width: fit-content; margin-left: auto; }
+  .mobile-menu[open] > summary { width: fit-content; margin-left: auto; }
   .mobile-menu nav { display: grid; padding-top: 16px; }
   .mobile-menu nav a { padding: 14px 0; border-bottom: 1px solid var(--color-brand-line); text-decoration: none; }
+  .mobile-menu .nav-group > summary { justify-content: space-between; padding-block: 14px; border-bottom: 1px solid var(--color-brand-line); }
+  .mobile-menu .nav-submenu { padding: 0 0 0 16px; }
+  .mobile-menu .nav-submenu a { display: block; }
   .hero-grid { grid-template-columns: 1fr; gap: 32px; }
   .hero { padding-block: 40px 48px; }
   h1 { font-size: clamp(2.4rem,7vw,3.55rem); }
@@ -170,3 +186,5 @@ a.contact-method:hover .value { text-decoration: underline; }
 @media(max-width:899px) { .project-comparison { gap: 32px; } }
 @media(max-width:639px) { .project-comparison, .project-grid-secondary { grid-template-columns: 1fr; } .comparison-controls { gap: 8px; } }
 @media print { .comparison-modes, .comparison-controls { display: none; } .project-comparison { display: block; } .comparison-stage { width: 240px; } }
+
+.desktop-nav a[aria-current="page"], .mobile-menu a[aria-current="page"] { color: var(--color-brand-accent); text-decoration: underline; text-underline-offset: 5px; }

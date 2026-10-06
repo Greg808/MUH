@@ -1,0 +1,17 @@
+---
+import { navigation } from '@content/site';
+interface Props { name: string; }
+const { name } = Astro.props;
+const homePrefix = Astro.url.pathname === '/' ? '' : '/';
+const hrefFor = (href: string) => href.startsWith('#') ? `${homePrefix}${href}` : href;
+---
+{navigation.map(item => item.links ? (
+  <details class="nav-group" name={name}>
+    <summary class:list={{ 'is-current': item.links.some(link => link.href === Astro.url.pathname) }}>
+      {item.label} <span class="nav-chevron" aria-hidden="true">⌄</span>
+    </summary>
+    <ul class="nav-submenu">
+      {item.links.map(link => <li><a href={hrefFor(link.href)} aria-current={link.href === Astro.url.pathname ? 'page' : undefined}>{link.label}</a></li>)}
+    </ul>
+  </details>
+) : <a href={hrefFor(item.href)}>{item.label}</a>)}

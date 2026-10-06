@@ -1,0 +1,16 @@
+/* Service-page composition. Imported explicitly by its route. */
+.service-page .service-back { display: inline-block; margin-bottom: 32px; font-size: .85rem; }
+.service-page .service-intro h1 { overflow-wrap: normal; }
+.service-page .service-image img { display: block; width: 100%; height: auto; border-radius: var(--radius-photo); }
+.service-page .project-gallery { columns: 1; column-gap: var(--spacing-gutter); }
+.service-page .project-gallery figure { break-inside: avoid; margin-bottom: var(--spacing-gutter); }
+@media (min-width: 640px) { .service-page .project-gallery { columns: 2; } }
+@media (min-width: 1200px) { .service-page .project-gallery { columns: 3; } }
+.service-page .service-list { margin: 0; padding: 0; list-style: none; font-size: .94rem; color: var(--color-brand-muted); line-height: 1.65; }
+.service-page .service-list li { display: grid; grid-template-columns: 1.25em minmax(0, 1fr); align-items: start; gap: 12px; }
+.service-page .service-list-icon { width: 1.25em; height: 1.25em; margin-top: .2em; color: var(--color-brand-accent); }
+.service-page .service-list li + li { margin-top: 12px; }
+@media (max-width: 359px) {
+  .service-page .service-intro h1 { overflow-wrap: anywhere; }
+  .service-page .service-list { hyphens: auto; }
+}

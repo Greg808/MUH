@@ -1,19 +1,30 @@
+import { servicePages } from './service-pages';
+
 export const site = {
   name: 'MUH – Malerei & Handwerk',
   description: 'Renovierung und Sanierung für Privat- und Gewerbekunden in Wien. MUH begleitet Wohnungen, Häuser und Geschäftsräume von der Planung bis zur Umsetzung.',
   locale: 'de-AT', tier: 'starter' as const, url: '', indexable: false,
 };
 export const starterContent = { skip: 'Zum Inhalt' };
-export const navigation = [
-  { label: 'Privat & Gewerbe', href: '#einsatzbereiche' },
+interface NavigationLink { label: string; href: string; }
+type NavigationItem = NavigationLink & { links?: never } | { label: string; links: NavigationLink[]; href?: never };
+
+export const navigation: NavigationItem[] = [
+  { label: 'Privat', links: [
+    { label: 'Für Ihr Zuhause', href: '#privat' },
+    ...servicePages.filter(page => page.category === 'privat').map(page => ({ label: page.label, href: `/${page.slug}/` })),
+  ] },
+  { label: 'Gewerbe', links: [
+    { label: 'Für Ihren Betrieb', href: '#gewerbe' },
+    ...servicePages.filter(page => page.category === 'gewerbe').map(page => ({ label: page.label, href: `/${page.slug}/` })),
+  ] },
   { label: 'So arbeiten wir', href: '#planung' },
   { label: 'Projekte', href: '#projekte' },
-  { label: 'Leistungen', href: '#leistungen' },
 ];
 export const contact = { email: 'hallo@muh.example.com', phone: '+43 (0)1 000 00 00', isPlaceholder: true };
 export const audiences = [
-  { title: 'Für Ihr Zuhause', image: 'private-home', alt: 'Wohnbereich mit Holzboden, weißen Altbautüren und offener Küche', text: 'Nach einem Wohnungskauf, vor der Rückgabe einer Mietwohnung oder für die Erneuerung Ihres Zuhauses: Wir planen die nötigen Arbeiten mit Ihnen – von Wänden und Böden bis zu Bad und Küche.', detail: 'Wohnungen · Häuser · Bäder & Küchen', action: 'Privates Vorhaben besprechen' },
-  { title: 'Für Ihren Betrieb', image: 'business-retail', alt: 'Geschäftsraum mit Produktregalen, Verkaufstheke und runder Deckenbeleuchtung', text: 'Geschäftslokal, Büro oder Hotel: Wir stimmen die Renovierung auf Ihren Betrieb ab. Dabei berücksichtigen wir Sperrzeiten, die Gestaltung Ihres Unternehmens sowie strapazierfähige und leicht zu reinigende Oberflächen.', detail: 'Geschäftslokale · Büros · Hotels', action: 'Gewerbliches Vorhaben besprechen' },
+  { id: 'privat', title: 'Für Ihr Zuhause', image: 'private-home', alt: 'Wohnbereich mit Holzboden, weißen Altbautüren und offener Küche', text: 'Nach einem Wohnungskauf, vor der Rückgabe einer Mietwohnung oder für die Erneuerung Ihres Zuhauses: Wir planen die nötigen Arbeiten mit Ihnen – von Wänden und Böden bis zu Bad und Küche.', detail: 'Wohnungen · Häuser · Bäder & Küchen', action: 'Privates Vorhaben besprechen' },
+  { id: 'gewerbe', title: 'Für Ihren Betrieb', image: 'business-retail', alt: 'Geschäftsraum mit Produktregalen, Verkaufstheke und runder Deckenbeleuchtung', text: 'Geschäftslokal, Büro oder Hotel: Wir stimmen die Renovierung auf Ihren Betrieb ab. Dabei berücksichtigen wir Sperrzeiten, die Gestaltung Ihres Unternehmens sowie strapazierfähige und leicht zu reinigende Oberflächen.', detail: 'Geschäftslokale · Büros · Hotels', action: 'Gewerbliches Vorhaben besprechen' },
 ];
 export const planning = [
   { title: 'Umfang und Kosten klären', text: 'Wir besprechen, welche Bereiche erneuert werden sollen, und erstellen ein Sanierungskonzept mit Kostenrahmen. Planskizzen und Voransichten machen die geplante Umsetzung nachvollziehbar.' },

@@ -1,0 +1,11 @@
+---
+import type { ProjectImage } from '../content/service-page';
+interface Props { image: ProjectImage; hero?: boolean; }
+const { image, hero = false } = Astro.props;
+const sizes = hero
+  ? '(min-width: 1264px) 568px, (min-width: 768px) 46vw, calc(100vw - 48px)'
+  : 'auto, (min-width: 1264px) 379px, (min-width: 1200px) 31vw, (min-width: 640px) 46vw, calc(100vw - 48px)';
+---
+<figure class="service-image">
+  <img src={image.src} srcset={image.srcset} sizes={sizes} width={image.width} height={image.height} alt={image.alt} loading={hero ? 'eager' : 'lazy'} fetchpriority={hero ? 'high' : undefined} decoding="async" />
+</figure>

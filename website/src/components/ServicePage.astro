@@ -1,0 +1,59 @@
+---
+import '../styles/service-page.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from './SiteHeader.astro';
+import SiteFooter from './SiteFooter.astro';
+import SectionFrame from './layout/SectionFrame.astro';
+import SectionLayout from './layout/SectionLayout.astro';
+import ItemGrid from './layout/ItemGrid.astro';
+import ButtonLink from './ui/ButtonLink.astro';
+import Contact from './sections/Contact.astro';
+import ProjectPhoto from './ProjectPhoto.astro';
+import type { ServicePageContent } from '../content/service-page';
+import { workIcons } from '../assets/icons/lucide';
+interface Props { content: ServicePageContent; }
+const { content } = Astro.props;
+---
+<BaseLayout title={`${content.title} · MUH`} description={content.description} themeColorLight="#ffffff">
+  <SiteHeader />
+  <main id="main" class="service-page" tabindex="-1">
+    <section id="start" class="hero section-space service-intro" aria-labelledby="service-title">
+      <div class="site-container">
+        <a class="text-link service-back" href="/">← Zur Startseite</a>
+        <SectionLayout variant="equal">
+          <div>
+            <p class="eyebrow">{content.eyebrow}</p>
+            <h1 id="service-title">{content.heading[0]} <br /><span>{content.heading[1]}</span></h1>
+            <p class="hero-intro">{content.intro}</p>
+            <div class="actions"><ButtonLink href="#kontakt">{content.action} <span aria-hidden="true">↗</span></ButtonLink><a class="text-link" href="#einblicke">Projektbilder ansehen ↓</a></div>
+          </div>
+          <ProjectPhoto image={content.hero} hero />
+        </SectionLayout>
+      </div>
+    </section>
+    <SectionFrame id="anforderungen" eyebrow={content.requirementsEyebrow} title={content.requirementsTitle} text={content.requirementsText} tone="soft">
+      <ItemGrid>{content.requirements.map(item => <article class="service"><h3>{item.title}</h3><p>{item.text}</p></article>)}</ItemGrid>
+    </SectionFrame>
+    <SectionFrame id="umfang" eyebrow="Was MUH übernimmt" title="Vom Sanierungskonzept bis zur Umsetzung." text="Den Umfang legen wir mit Ihnen für Ihr Vorhaben fest. Nicht jede Renovierung benötigt alle Schritte.">
+      <!-- Lucide icons, ISC license: /licenses/lucide.txt -->
+      <ItemGrid>
+        {content.work.map(group => (
+          <article class="service">
+            <h3>{group.title}</h3>
+            <ul class="service-list" role="list">
+              {group.items.map(item => {
+                const Icon = workIcons[item.icon];
+                return <li><Icon class="service-list-icon" aria-hidden="true" focusable="false" /><span>{item.text}</span></li>;
+              })}
+            </ul>
+          </article>
+        ))}
+      </ItemGrid>
+    </SectionFrame>
+    <SectionFrame id="einblicke" eyebrow="Originale Projektaufnahmen" title={content.galleryTitle} text={content.galleryText} tone="soft">
+      <div class="project-gallery">{content.gallery.map(image => <ProjectPhoto image={image} />)}</div>
+    </SectionFrame>
+    <Contact />
+  </main>
+  <SiteFooter />
+</BaseLayout>

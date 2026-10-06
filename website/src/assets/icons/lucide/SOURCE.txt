@@ -1,0 +1,4 @@
+Lucide official SVG subset
+https://github.com/lucide-icons/lucide/tree/1fae58d0a9c661a338036838caf3399b5507bab6/icons
+Retrieved 2026-10-06; original files, no geometry changes.
+License: see LICENSE.
