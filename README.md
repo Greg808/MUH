@@ -1,5 +1,7 @@
 # MUH – Homepage-Präsentationsentwurf
 
+Arbeitsstand: 06.10.2026. Einziger aktiver Codeordner: `website/`. Aktuelle Prüfung und offene Punkte: [Übergabe](website/docs/HANDOFF.md).
+
 Ausschließlich die Homepage, ohne Deployment. Erstellt aus Gregs technischem Astro-Starter, Revision 8773fe5. Konzeptfreigabe und Erlaubnis für Beispielinhalte: 16.09.2026. Die Abnahme des umgesetzten Designs steht aus.
 
 ## Lokal ansehen
@@ -60,3 +62,16 @@ Genau eine ausführliche README und eine .gitignore liegen in der Git-Projektwur
 ## Paketmanager · 05.10.2026
 
 Standard ist pnpm 11.19.0, festgelegt in `website/package.json`. `website/pnpm-lock.yaml` wird versioniert; nach freigegebener Installation `pnpm install --frozen-lockfile` verwenden. Falls der lokale pnpm-Befehl eine andere Version startet, kann vorhandenes Corepack mit `corepack pnpm` die festgelegte Version wählen. Alte npm-Lockfiles und Installationen bleiben ausschließlich in der ignorierten `website/.local-work/pnpm-migration-2026-10-05/`. Datierten Prüfberichten bleiben ihre damaligen Befehle erhalten. Allgemeine Prüfungen starten zentral und wählen pnpm aus dem Manifest. Die Einstellungen in `website/pnpm-workspace.yaml` erlauben nur die benötigten esbuild-/sharp-Buildscripts und verhindern eine implizite Installation durch Prüfbefehle.
+
+## Ordnerübersicht · geprüft 06.10.2026
+
+| Ort | Zweck | Git |
+| --- | --- | --- |
+| `website/` | Aktuelle Homepage, Konfiguration, Tests und Projektdokumentation | Quellen versioniert |
+| `quellen/` | Originalmaterial, Bildauswahl und lokale Studien | Ignoriert |
+| `archiv/` | Nicht mehr aktive Dateien | Ignoriert |
+| `website/.local-work/` | Prüfnachweise und gesicherte frühere Werkzeuge/npm-Installation | Ignoriert |
+| `website/node_modules/` | Aktive pnpm-Abhängigkeiten | Ignoriert |
+| `website/dist/`, `website/.astro/` | Generierte Ausgaben | Ignoriert |
+
+Wie bei Gruppe2000 dürfen ignorierte lokale Dateien erhalten bleiben. Genau eine aktive Root-README, Root-.gitignore und Root-.git; keine aktiven Kopien zentraler Werkzeuge. 20 ungenutzte Bilder aus public/images liegen jetzt unter `archiv/unused-media-2026-10-06/`. Herkunftsnachweise bleiben in ASSETS.json erhalten. Archive und Quellen sind kein externes Backup.

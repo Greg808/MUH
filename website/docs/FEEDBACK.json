@@ -72,6 +72,30 @@
       "destination": "project",
       "target": "src/content/site.ts",
       "changeEvidence": "Zwei gleich große Zielgruppen, neutraler Hero/Planung/Kontakt, private Leistungen und Wohnungsprojekt sowie private Musterstimme ergänzt. Bestehende Farben, Typografie, Komponenten, Reihenfolge und Vergleich erhalten."
+    },
+    {
+      "id": "muh-maintenance-2026-10-06",
+      "observation": "Gruppe2000-Erkenntnisse auf MUH anwenden und drei überflüssige Git-Ordner löschen.",
+      "cause": "Alte Git-Einrichtungen, Preview-Sperre im Testserver und veraltete responsive Bildgrößenangaben.",
+      "source": "Greg, 06.10.2026: mach das und lösche überfüssig git folder",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "playwright.config.ts; src/components/sections/Projects.astro; tests/e2e/site.spec.ts; docs/HANDOFF.md",
+      "changeEvidence": "Isolierter Preview-Testserver mit --ignore-lock; Bildgrößen an gleiche Spalten angepasst; Inhaltskanten an zehn Breiten geprüft. Drei alte Git-Metadatenordner gelöscht, aktives .git erhalten. Aktuelle Prüfung siehe HANDOFF.md."
+    },
+    {
+      "id": "muh-folder-cleanup-2026-10-06",
+      "observation": "Projektordner nach demselben Muster wie Gruppe2000 bereinigen.",
+      "cause": "Grundstruktur bereits am 05.10. eingerichtet; 20 alte, ungenutzte Bilddateien blieben im aktiven public-Ordner.",
+      "source": "Greg, 06.10.2026",
+      "project": "muh",
+      "scope": "project",
+      "status": "implemented",
+      "destination": "project",
+      "target": "README.md; docs/ASSETS.json; archiv/unused-media-2026-10-06/",
+      "changeEvidence": "20 alte Medien unverändert archiviert, Quellen und Nachweise erhalten. Genau ein aktives Git/README/gitignore im Root, ein aktiver Codeordner website, zentrale Werkzeuge. Ignore-Regeln und gebaute Bildreferenzen geprüft; aktueller Build bestanden."
     }
   ]
 }

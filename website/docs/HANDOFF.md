@@ -1,3 +1,39 @@
+# MUH · aktueller Wartungsstand · 06.10.2026
+
+Maßgeblich ist dieser Einstieg. Der folgende Stand vom 16.09. dokumentiert die historische Entwurfsarbeit und damalige Prüfungen, keinen aktuellen vollständigen Designreview.
+
+## Umgesetzt
+
+- Drei alte Root-Git-Metadatenordner nach ausdrücklicher Freigabe gelöscht: `.git 13.16.33`, `.git 13.18.34`, `.git 13.21.37`. Zwei enthielten keinen Commit; der weitere Erstcommit hatte denselben versionierten Dateibaum wie das aktive Repository. Aktives `.git`, Branch `main`, Commit `2448d9c` erhalten.
+- Testserver verwendet Astros vorhandenes `--ignore-lock`, wie Gruppe2000. Tests laufen auf separatem Port auch bei geöffneter Projektvorschau.
+- Responsive Größenangaben der zwei gleich breiten Projektbilder korrigiert; native automatische Größenwahl für lazy Bilder mit breitenabhängigem Fallback. Gestaltung und Inhalte erhalten.
+- Regression prüft linke und rechte Inhaltskanten von Header, allen Abschnitten und Footer bei 320/390/639/640/768/899/900/1264/1440/1920px. Gruppe2000-Erkenntnis konkret im bestehenden MUH-Test angewendet; keine neuen Werkzeuge.
+- Feedback und Aufgabenliste aktualisiert. Privat und Gewerbe bleiben gleichwertig; frühere Gewerbepriorität ist historisch überholt.
+
+## Projektordner-Bereinigung · 06.10.2026
+
+Grundstruktur vom 05.10. gegen Gruppe2000 bestätigt. 20 ungenutzte alte Hero-/Projektbilder unverändert aus public/images nach archiv/unused-media-2026-10-06/ verschoben; Herkunft in ASSETS.json aktualisiert. Root-README erklärt aktive Quellen, Archiv und ignorierte generierte/lokale Dateien. Keine Originalquellen oder Prüfnachweise gelöscht.
+
+## Tatsächliche Prüfung
+
+- `pnpm run check`: 26 Dateien, 0 Fehler, Warnungen oder Hinweise.
+- `pnpm run build`: eine statische Route erfolgreich gebaut.
+- `pnpm run test:e2e`: 26/26 Chromium-Fälle bestanden, während die eigene MUH-Vorschau auf Port 4235 lief. Kein Preview-Konflikt mehr.
+- `git diff --check` bestanden; kleiner Diff geprüft. Kein neues JavaScript, keine Installation, kein Versionswechsel.
+- Desktop-Projektabschnitt in frischer Vorschau gesichtet. Keine vollständige neue Whole-site-, Safari-/Firefox- oder mobile Sichtabnahme. Kantenmessung und bestehende mobile Verhaltenstests sind technische Nachweise, keine Designabnahme.
+
+## Offen und nächster Schritt
+
+Original-Leistungsumfang systematisch mit der aktuellen Gliederung abgleichen. Preline-Altbestand separat mit Manifest/Lockfile bereinigen. Echte Kundenstimmen, bestätigte Projekttexte und Kontaktdaten fehlen weiterhin; Musterkennzeichnung und noindex bleiben aktiv. Veröffentlichung und Rechtsangaben bleiben im bisherigen späteren Umfang. Keine neue Designabnahme behauptet.
+
+## Versionskontrolle
+
+Die Wartungs- und Bereinigungsänderungen werden auf Gregs Auftrag vom 06.10. in zwei lokalen Commits festgehalten: technische Wartung sowie Medienbereinigung/Dokumentation. Kein Push, Deployment oder neues externes Backup. Die entfernten Git-Ordner waren unversionierte Altbestände; die bestehende Git-Historie bleibt erhalten. Archivierte Bilder sind zusätzlich über den vorherigen Commit 2448d9c wiederherstellbar; das lokale Archiv selbst bleibt ignoriert.
+
+---
+
+## Historie · durch den aktuellen Einstieg ersetzt
+
 # MUH · Erstentwurf V1 · 16.09.2026
 
 Vollständige Homepage für die Designpräsentation. Lokale Vorschau: http://127.0.0.1:4235/ . Keine Unterseiten oder Veröffentlichung.

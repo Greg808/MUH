@@ -5,7 +5,9 @@
     "width": 2560,
     "height": 1920,
     "permission": "Greg confirmed project photos, 2026-09-16",
-    "role": "Previous hero asset; retained, no longer used in Hero"
+    "role": "Previous hero asset; retained, no longer used in Hero",
+    "status": "archived-unused",
+    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)"
   },
   {
     "slug": "business-retail",
@@ -21,7 +23,9 @@
     "width": 800,
     "height": 600,
     "permission": "Greg confirmed project photos, 2026-09-16",
-    "role": "Authentic project photo"
+    "role": "Authentic project photo",
+    "status": "archived-unused",
+    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)"
   },
   {
     "slug": "business-hotel",
@@ -29,7 +33,9 @@
     "width": 800,
     "height": 600,
     "permission": "Greg confirmed project photos, 2026-09-16",
-    "role": "Authentic project photo"
+    "role": "Authentic project photo",
+    "status": "archived-unused",
+    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)"
   },
   {
     "slug": "project-office",
@@ -37,7 +43,9 @@
     "width": 800,
     "height": 600,
     "permission": "Greg confirmed project photos, 2026-09-16",
-    "role": "Authentic photograph; example description explicitly labeled"
+    "role": "Authentic photograph; example description explicitly labeled",
+    "status": "archived-unused",
+    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)"
   },
   {
     "slug": "project-retail",
@@ -45,7 +53,9 @@
     "width": 800,
     "height": 533,
     "permission": "Greg confirmed project photos, 2026-09-16",
-    "role": "Authentic photograph; example description explicitly labeled"
+    "role": "Authentic photograph; example description explicitly labeled",
+    "status": "archived-unused",
+    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)"
   },
   {
     "slug": "project-hotel",
@@ -53,7 +63,9 @@
     "width": 800,
     "height": 600,
     "permission": "Greg confirmed project photos, 2026-09-16",
-    "role": "Authentic photograph; example description explicitly labeled"
+    "role": "Authentic photograph; example description explicitly labeled",
+    "status": "archived-unused",
+    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)"
   },
   {
     "slug": "hero-altbau-ai",
@@ -67,7 +79,9 @@
       480,
       800,
       1086
-    ]
+    ],
+    "status": "archived-unused",
+    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)"
   },
   {
     "slug": "compare",
@@ -83,7 +97,9 @@
   {
     "slug": "business-hotel-selected / project-hotel-selected",
     "source": "Hotelzimmerrenovierung21.jpg",
-    "role": "Authentic selected hotel photo"
+    "role": "Authentic selected hotel photo",
+    "status": "archived-unused",
+    "archive": "archiv/unused-media-2026-10-06/images/ (relative to project root)"
   },
   {
     "slug": "hero-reception-ai",
